@@ -167,6 +167,12 @@
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>de.danielnaber</groupId>
+            <artifactId>jwordsplitter</artifactId>
+            <version>4.1</version>
+        </dependency>
     </dependencies>
 
 </project>
