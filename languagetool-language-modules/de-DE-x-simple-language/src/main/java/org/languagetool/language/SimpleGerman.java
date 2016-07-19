@@ -20,9 +20,11 @@ package org.languagetool.language;
 
 import org.languagetool.languagemodel.LanguageModel;
 import org.languagetool.rules.Rule;
+import org.languagetool.rules.SimpleGermanCompoundSplitRule;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.ResourceBundle;
@@ -52,7 +54,9 @@ public class SimpleGerman extends GermanyGerman {
 
   @Override
   public List<Rule> getRelevantRules(ResourceBundle messages) {
-    return Collections.emptyList();
+    return Arrays.asList(
+            new SimpleGermanCompoundSplitRule()
+    );
   }
 
   @Override
