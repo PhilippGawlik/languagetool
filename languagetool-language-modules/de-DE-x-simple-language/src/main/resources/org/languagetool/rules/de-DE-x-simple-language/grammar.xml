@@ -1238,7 +1238,8 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                     <token>-</token>
                     <token>Inf</token>
                     <token>.</token>
-                    <token>oder Dipl</token>
+                    <token>oder</token>
+                    <token>Dipl</token>
                     <token>.</token>
                     <token>-</token>
                     <token>Inform</token>
@@ -3344,7 +3345,8 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
             </rule>
             <rule>
                 <pattern>
-                    <token>et al</token>
+                    <token>et</token>
+                    <token>al</token>
                     <token>.</token>
                 </pattern>
                 <message>
@@ -6005,19 +6007,17 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
             </rule>
             <rule>
                 <pattern>
+                    <token>a</token><token>.</token><token>B</token><token>.</token>
+                </pattern>
+                <message>Abkürzung gefunden. Verzichten Sie auf Abkürzungen.</message>
+            </rule>
+            <rule>
+                <pattern>
                     <token regexp="yes">\p{Lu}{2,}</token>
                 </pattern>
                 <message>Abkürzung gefunden. Verzichten Sie auf Abkürzungen.</message>
                 <example>Das <marker>Köchelverzeichnis</marker> ist ein Verzeichnis der Kompositionen von Mozart.</example>
                 <example correction="">Das <marker>KV</marker> ist ein Verzeichnis der Kompositionen von Mozart.</example>
-            </rule>
-            <rule>
-                <pattern>
-                    <or>
-                        <token>a</token><token>.</token><token>B</token><token>.</token>
-                    </or>
-                </pattern>
-                <message>Abkürzung gefunden. Verzichten Sie auf Abkürzungen.</message>
             </rule>
             <rule>
                 <pattern>
