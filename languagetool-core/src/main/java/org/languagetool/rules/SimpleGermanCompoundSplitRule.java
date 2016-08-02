@@ -18,9 +18,7 @@ import de.danielnaber.jwordsplitter.*;
 public class SimpleGermanCompoundSplitRule extends Rule {
 
     @Override
-    public String getId() {
-        return "German Compound Split Rule";  // a unique id that doesn't change over time
-    }
+    public String getId() {return "GERMANCOMPOUNDSPLITRULE";}
 
     @Override
     public String getDescription() {
@@ -83,6 +81,11 @@ public class SimpleGermanCompoundSplitRule extends Rule {
 
         // Iterate over all tokens (words)
         for (AnalyzedTokenReadings token : tokens) {
+            System.out.println("Token: " + token.getToken());
+            for (AnalyzedToken analyzedToken : token.getReadings()) {
+                System.out.println("  Lemma: " + analyzedToken.getLemma());
+                System.out.println("  POS: " + analyzedToken.getPOSTag());
+}
             // Iterate over several readings of the current word
             for (AnalyzedToken analyzedToken : token.getReadings()) {
                 //Check if relevant token
