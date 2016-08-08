@@ -110,7 +110,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
         <rulegroup id="ABKUERZUNG" name="Leichte Sprache: Abkürzung">
             <rule>
                 <pattern>
-                    <token inflected='yes' regexp='yes'>Abb|Abf|Abh|Abk|abl|Abs|abschl|Abschl|Abschn|Abt|abw|abzügl|Adj|agr|allg|amerikan|amtl|Amtsbez|Anh|anim|anl|Anl|Anm|Antw|Apr|Art|Auff|Aufl|Aug|Ausf|ausl|Bd|bearb|beil|Beil|Bek|Bem|bes|best|betr|Betriebsw|bez|Bez|Bhf|biol|bish|Bk|Bln|bspw|Buchst|bw|bzw|ca|can|chines|cult|cur|Dat|DDr|dent|Dez|Di|Do|Dpl|Dr|Dr|Dres|DrPH|Drs|dt|Dt|ebd|ehem|eigtl|Einf|Eing|Einl|einschl|eng|Entsch|entspr|Erg|etal|etc|Etg|Eur|ev|evtl|Fa|Fam|Feb|Febr|ff|fortl|Forts|Fr|franz|frz|gdw|geb|gegr|gem|gen|gepfl|ges|gesch|gesetzl|gez|ggf|ggl|grds|griech|habil|Hbf|Hbhf|hom|hort|Hr|Hrsg|hum|inkl|insb|insbes|int|internat|iur|Jahrh|Jan|Jh|Jhd|Jhr|jr|Jul|Jun|Kap|kath|Kdm|Kennz|Komm|kompl|Kr|Krh|krit|Kto|künstl|Kz|Landkr|lat|led|lfd|Lfg|lic|Lit|lt|Mag|Mär|math|Math|mdl|med|medic|merc|mglw|Mi|Min|Mio|mittelalterl|Mo|möbl|möglicherw|mont|Mrd|mtl|mult|mündl|mus|nat|nat|No|norw|Nov|Nr|od|oec|oec|Okt|österr|paed|pharm|phil|physiol|Pkt|pol|poln|Prof|publ|Ref|rer|russ|Sa|sc|schriftl|schwed|schweizer|scil|sec|Sek|Sep|Sept|sic|silv|Slg|So|soc|sog|sogen|Sportwiss|Std|Str|tägl|tech|techn|teilw|theol|Tit|tlw|troph|türk|umstr|unbest|unveröff|unveröffentl|urspr|ursprüngl|usf|usw|Verf|veröffentl|Verw|Verww|vet|vgl|Vis|vllt|vollst|voraussichtl|vorl|vorm|vs|vsl|Wdh|wg|whd|Whg|wiss|wöchentl|Ziff|zit|zsm|zul|zus|zust|zutr|zzgl</token>
+                    <token inflected='yes' regexp='yes'>Abb|Abf|Abh|Abk|abl|Abs|abschl|Abschl|Abschn|Abt|abw|abzügl|Adj|agr|al|allg|amerikan|amtl|Amtsbez|Anh|anim|anl|Anl|Anm|Antw|Apr|Art|Auff|Aufl|Aug|Ausf|ausl|Bd|bearb|beil|Beil|Bek|Bem|bes|best|betr|Betriebsw|bez|Bez|Bhf|biol|bish|Bk|Bln|bspw|Buchst|bw|bzw|ca|can|chines|cult|cur|Dat|DDr|dent|Dez|Di|Do|Dpl|Dr|Dr|Dres|DrPH|Drs|dt|Dt|ebd|ehem|eigtl|Einf|Eing|Einl|einschl|eng|Entsch|entspr|Erg|etc|Etg|Eur|ev|evtl|Fa|Fam|Feb|Febr|ff|fortl|Forts|Fr|franz|frz|gdw|geb|gegr|gem|gen|gepfl|ges|gesch|gesetzl|gez|ggf|ggl|grds|griech|habil|Hbf|Hbhf|hom|hort|Hr|Hrsg|hum|inkl|insb|insbes|int|internat|iur|Jahrh|Jan|Jh|Jhd|Jhr|jr|Jul|Jun|Kap|kath|Kdm|Kennz|Komm|kompl|Kr|Krh|krit|Kto|künstl|Kz|Landkr|lat|led|lfd|Lfg|lic|Lit|lt|Mag|Mär|math|Math|mdl|med|medic|merc|mglw|Mi|Min|Mio|mittelalterl|Mo|möbl|möglicherw|mont|Mrd|mtl|mult|mündl|mus|nat|nat|No|norw|Nov|Nr|od|oec|oec|Okt|österr|paed|pharm|phil|physiol|Pkt|pol|poln|Prof|publ|Ref|rer|russ|Sa|sc|schriftl|schwed|schweizer|scil|sec|Sek|Sep|Sept|sic|silv|Slg|So|soc|sog|sogen|Sportwiss|Std|Str|tägl|tech|techn|teilw|theol|Tit|tlw|troph|türk|umstr|unbest|unveröff|unveröffentl|urspr|ursprüngl|usf|usw|Verf|veröffentl|Verw|Verww|vet|vgl|Vis|vllt|vollst|voraussichtl|vorl|vorm|vs|vsl|Wdh|wg|whd|Whg|wiss|wöchentl|Ziff|zit|zsm|zul|zus|zust|zutr|zzgl</token>
                     <token>.</token>
                 </pattern>
                 <message>Abkürzung gefunden. Verzichten Sie auf Abkürzungen.</message>
@@ -155,9 +155,9 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                 <example correction="">Der Manager <marker>wurde gefeuert</marker>.</example>
             </rule>
             <rule>
-                <pattern>
+               <pattern>
                     <token postag_regexp="yes" postag="PA2:PRD:.*|VER:PA2:.*"/>
-                    <token inflected="yes" postag_regexp="yes" postag="VER:AUX:.*"><exception>,</exception>werden</token>
+                    <token inflected="yes" postag_regexp="yes" postag="VER:AUX.*"><exception>,</exception>werden</token>
                 </pattern>
                 <message>In diesem Satz haben Sie das Passiv verwendet. Benutzen Sie aktive Wörter.</message>
                 <example>Sie feuerten den Manager.</example>
