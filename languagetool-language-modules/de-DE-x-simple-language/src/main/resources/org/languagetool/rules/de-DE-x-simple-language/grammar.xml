@@ -203,6 +203,52 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                 <example correction="">Der Sattel <marker>deines Fahrrads</marker>.</example>
                 <!-- Vorschlag: Verwenden Sie statt dessen den Dativ. -->
             </rule>
+            <!-- A lot of false positives
+            <rule>
+                <pattern>
+                    <marker>
+                        <token postag_regexp="yes" postag="ART:(DEF|IND):GEN:.*" skip="-1"/>
+                        <token postag_regexp="yes" postag="SUB:GEN:.*" skip="-1"/>
+                    </marker>
+                    <token postag_regexp="yes" postag="SUB:.*"/>
+                </pattern>
+                <message>Genitiv gefunden. Vermeiden Sie den Genitiv.</message>
+                <example>Von dem Fahrrad der Sattel ist nass.</example>
+                <example correction=""><marker>Deines Fahrrads</marker> Sattel ist nass.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <marker>
+                        <token postag_regexp="yes" postag="PRO:POS:GEN:.*" skip="-1"/>
+                        <token postag_regexp="yes" postag="SUB:GEN:.*" skip="-1"/>
+                    </marker>
+                    <token postag_regexp="yes" postag="SUB:.*"/>
+                </pattern>
+                <message>Genitiv gefunden. Vermeiden Sie den Genitiv.</message>
+                <example>Von deinem Fahrrad der Sattel ist nass.</example>
+                <example correction=""><marker>Des Fahrrads</marker> Sattel ist nass.</example>
+            </rule>
+            -->
+            <rule>
+                <pattern>
+                    <token regexp='yes'>abseits|abzüglich|anfangs|angesichts|anhand|anlässlich|anstatt|statt|anstelle|augrund|außerhalb|ausschließlich|beiderseits|betreffs|bezüglich|diesseits|eingangs|einschließlich|entlang|hinsichtlich|infolge|inklusive|inmitten|innerhalb|jenseits|kraft|längs|längsseits|laut|mittels|namens|ob|oberhalb|seitens|trotz|unbeschadet|ungeachtet|unfern|unterhalb|unweit|vermittels|vermöge|vorbehaltlich|während|wegen|zeit|zufolge|zugunsten|zuungunsten|zuzüglich|zwecks</token>
+                    <token postag='ART:(DEF|IND):GEN:.*' postag_regexp='yes' skip='-1'/>
+                    <token postag='SUB:GEN:.*' postag_regexp='yes'/>
+                </pattern>
+                <message>Genitiv gefunden. Vermeiden Sie den Genitiv.</message>
+                <example>Wegen dem Sattel.</example>
+                <example correction=''><marker>Wegen des Sattels</marker>.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token regexp='yes'>abseits|abzüglich|anfangs|angesichts|anhand|anlässlich|anstatt|statt|anstelle|augrund|außerhalb|ausschließlich|beiderseits|betreffs|bezüglich|diesseits|eingangs|einschließlich|entlang|hinsichtlich|infolge|inklusive|inmitten|innerhalb|jenseits|kraft|längs|längsseits|laut|mittels|namens|ob|oberhalb|seitens|trotz|unbeschadet|ungeachtet|unfern|unterhalb|unweit|vermittels|vermöge|vorbehaltlich|während|wegen|zeit|zufolge|zugunsten|zuungunsten|zuzüglich|zwecks</token>
+                    <token postag='PRO:POS:GEN:.*' postag_regexp='yes' skip='-1'/>
+                    <token postag='SUB:GEN:.*' postag_regexp='yes'/>
+                </pattern>
+                <message>Genitiv gefunden. Vermeiden Sie den Genitiv.</message>
+                <example>Wegen deinem Sattel.</example>
+                <example correction=''><marker>Wegen deines Sattels</marker>.</example>
+            </rule>
         </rulegroup>
 
         <rulegroup id="INDIREKTE_REDE" name="Leichte Sprache: Indirekte Rede">
