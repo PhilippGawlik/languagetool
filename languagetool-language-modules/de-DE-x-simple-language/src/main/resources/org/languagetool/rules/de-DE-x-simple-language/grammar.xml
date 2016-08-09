@@ -294,7 +294,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
         <rulegroup id="ZAHLEN" name="Leichte Sprache: Zahlen und Jahreszahlen">
             <rule>
                 <pattern>
-                    <token spacebefore="yes" regexp="yes">\p{N}{3,}</token>
+                    <token spacebefore="yes" regexp="yes">\p{N}{5,}</token>
                 </pattern>
                 <message>Hohe Zahl gefunden. Vermeiden Sie hohe Zahlen.</message>
                 <example>Sehr viele Menschen</example>
@@ -351,16 +351,6 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
         <rulegroup id="DATUM" name="Leichte Sprache: Datum">
             <rule>
                 <pattern>
-                    <token regexp="yes">\p{N}+</token>
-                    <token spacebefore="no">.</token>
-                    <token regexp="yes">(Januar|Februar|März|April|Mai|Juni|Juli|August|September|Oktober|November|Dezember)</token>
-                </pattern>
-                <message>Datum mit Monatsnamen gefunden. Fragen Sie die Prüfer und Prüferinnen: Wie sollen Sie ein Datum schreiben?</message>
-                <example>Am 31.1. geht es los.</example>
-                <example correction="">Am <marker>31. Januar</marker> geht es los.</example>
-            </rule>
-            <rule>
-                <pattern>
                     <token regexp="yes">(0|1|2|3)?\p{N}</token>
                     <token spacebefore="no">.</token>
                     <token spacebefore="no" regexp="yes">(0|1)?\p{N}</token>
@@ -373,14 +363,49 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
             </rule>
             <rule>
                 <pattern>
-                    <token regexp="yes">(0|1|2|3)?\p{N}</token>
+                    <token regexp='yes'>(0|1|2|3)?\p{N}</token>
                     <token spacebefore="no">.</token>
-                    <token spacebefore="no" regexp="yes">(0|1)?\p{N}</token>
+                    <token spacebefore="no" regexp='yes'>(0|1)?\p{N}</token>
                     <token spacebefore="no">.</token>
+                    <token spacebefore="no" regexp='yes'>(0|1)[0-8]\p{N}{2}</token>
                 </pattern>
-                <message>Datumsangabe gefunden. Fragen Sie die Prüfer und Prüferinnen: Wie sollen Sie ein Datum schreiben?</message>
-                <example>Am 31. Januar geht es los.</example>
-                <example correction="">Am <marker>31.01.</marker> geht es los.</example>
+                <message>Bitte verwenden Sie keine alten Jahreszahlen. Umschreiben Sie Daten die vor dem 20. Jahrhundert liegen.</message>
+                <short>Alte Jahreszahl gefunden. Bitte umschreiben Sie die Zeitangabe.</short>
+                <example>Vor vielen Jahren.</example>
+                <example correction=''>Im Jahre <marker>12.12.1867</marker>.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token regexp='yes'>(0|1|2|3)?\p{N}</token>
+                    <token spacebefore="no">.</token>
+                    <token regexp="yes">(Januar|Februar|März|April|Mai|Juni|Juli|August|September|Oktober|November|Dezember)</token>
+                    <token regexp='yes'>(19|20)?\p{N}{2}</token>
+                </pattern>
+                <message>Datum mit Monatsnamen gefunden. Fragen Sie die Prüfer und Prüferinnen: Wie sollen Sie ein Datum schreiben?</message>
+                <example>Am 31.1.2012 geht es los.</example>
+                <example correction="">Am <marker>31. Januar 2012</marker> geht es los.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token regexp='yes'>(0|1|2|3)?\p{N}</token>
+                    <token spacebefore="no">.</token>
+                    <token regexp="yes">(Januar|Februar|März|April|Mai|Juni|Juli|August|September|Oktober|November|Dezember)</token>
+                    <token regexp='yes'>(0|1)[0-8]\p{N}{2}</token>
+                </pattern>
+                <message>Bitte verwenden Sie keine alten Jahreszahlen. Umschreiben Sie Daten die vor dem 20. Jahrhundert liegen.</message>
+                <short>Alte Jahreszahl gefunden. Bitte umschreiben Sie die Zeitangabe.</short>
+                <example>Vor vielen Jahren.</example>
+                <example correction=''>Im Jahre <marker>12. Dezember 1867</marker>.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token regexp="yes">\p{N}+</token>
+                    <token spacebefore="no">.</token>
+                    <token regexp="yes">(Januar|Februar|März|April|Mai|Juni|Juli|August|September|Oktober|November|Dezember)</token>
+                </pattern>
+                <message>Datum mit Monatsnamen gefunden. Fragen Sie die Prüfer und Prüferinnen: Wie sollen Sie ein Datum schreiben?</message>
+                <example>Am 31.1. geht es los.</example>
+                <example correction="">Am <marker>31. Januar</marker> geht es los.</example>
             </rule>
         </rulegroup>
 
