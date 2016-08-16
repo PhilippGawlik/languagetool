@@ -278,6 +278,15 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                 <example>Angeblich sind sie bereit.</example>
                 <example correction="">Man <marker>sei</marker> bereit.</example>
             </rule>
+            <rule>
+                <!-- Konjunktiv 2 unregelmäßige Verben -->
+                <pattern>
+                    <token regexp='yes'>bräuchte|brächte|wüsste|käme|ginge|schliefe|bliebe|sähe|gäbe|läge|ließe|wäre|hätte|würde|müsste|dürfte|könnte|sollte|wollte</token>
+                </pattern>
+                <message>Konjunktiv gefunden. Vermeiden Sie den Konjunktiv.</message>
+                <example>Auf wiedersehen.</example>
+                <example correction="">Ich <marker>würde</marker> mich nun verabschieden.</example>
+            </rule>
         </rulegroup>
 
         <rule id="ROEMISCHE_ZAHL" name="Leichte Sprache: Römischen Zahl">
