@@ -436,6 +436,21 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                 <example correction="">Erhöhung um einige <marker>%</marker></example>
             </rule>
         </rulegroup>
+        
+        <rulegroup id="TELEFONNUMMERN" name="Leichte Sprache: Telefonnummern">
+            <rule id="TELEFONNUMMER" name="Telefonnummer">
+                <pattern>
+                    <token>(</token>
+                    <token regexp='yes'>\p{N}+</token>
+                    <token>)</token>
+                    <token regexp='yes'>\p{N}+</token>
+                </pattern>
+                <message>Bitte setzen Sie bei Telefonnummern ein Leerzeichen nach jeder zweiten Zahl ein Leerzeichen und verwenden Sie wenn notwendig einen Bindestrich um Vorwahl und persönliche Nummer voneinander zu trennen.</message>
+                <short>Bitte halten Sie sich an die Richtlinie für Telefonnummer.</short>
+                <example correction=''><marker>(05544) 333121</marker></example>
+                <example>0 55 44 - 33 31 21</example>
+            </rule>
+        </rulegroup>
 
         <rulegroup id="SATZ" name="Leichte Sprache: Satz">
             <rule>
