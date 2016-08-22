@@ -90,7 +90,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
 
         <rule id="NEGATION_PRFIX_UN" name="Negation Präfix un-">
             <pattern case_sensitive='no'>
-                <token regexp='yes' postag='ADJ:PRD:GRU'>un(?!ter)[A-Za-zöÖäÄüÜß]*</token>
+                <token regexp='yes' >un(?!ter)[A-Za-zöÖäÄüÜß]*</token>
             </pattern>
             <message>Sie nutzen das Negationsprefix 'un-'. Bitte verwenden Sie die positive Wort-form (z.B. <suggestion>hässlich</suggestion> statt unschön).</message>
             <short>Postive Wortform verwenden.</short>
