@@ -104,7 +104,7 @@ public class SimpleGermanCompoundSplitRule extends Rule {
                                 RuleMatch ruleMatch = new RuleMatch(this, token.getStartPos(),
                                         token.getEndPos(),
                                         "Bitte zerlegen sie zusammengesetzte Nomen. Verknüpfen Sie die einzelen Teile" +
-                                                "durch Bindestriche.");
+                                                " durch Bindestriche.");
                                 // the user will see this as a suggested correction
                                 ruleMatch.setSuggestedReplacement(sugCorrect);
                                 ruleMatches.add(ruleMatch);
