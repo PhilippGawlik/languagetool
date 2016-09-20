@@ -1,7 +1,7 @@
 package org.languagetool.rules;
 
-import org.ahocorasick.trie.Trie;
 import org.ahocorasick.trie.Emit;
+import org.ahocorasick.trie.Trie;
 import org.languagetool.AnalyzedSentence;
 
 import java.io.File;
@@ -10,14 +10,14 @@ import java.util.*;
 
 /**
  */
-public class SimpleGermanDifficultExpressionsRule extends Rule {
+public class SimpleGermanMetaphorsRule extends Rule {
 
     @Override
-    public String getId() {return "SCHWIERIGEWOERTER";}
+    public String getId() {return "METAPHERN";}
 
     @Override
     public String getDescription() {
-        return "Leichte Sprache: Schwierige Wörter";  // shown in the configuration dialog
+        return "Leichte Sprache: Metaphern und Redewendungen";  // shown in the configuration dialog
     }
 
     @Override
@@ -25,7 +25,7 @@ public class SimpleGermanDifficultExpressionsRule extends Rule {
         Trie trie = new Trie().onlyWholeWords();
         Map keyword2replacement = new HashMap();
 
-        String filename = "org/languagetool/word_list/schwierige_woerter.txt";
+        String filename = "org/languagetool/word_list/metaphor_and_expressions.txt";
         ClassLoader classLoader = getClass().getClassLoader();
 	    File file = new File(classLoader.getResource(filename).getFile());
         try (Scanner scanner = new Scanner(file)) {
@@ -55,12 +55,12 @@ public class SimpleGermanDifficultExpressionsRule extends Rule {
 //            System.out.println(" \tEnd: " + elem.getEnd());
 //            System.out.println(" \tKeyword: " + keyword);
 
-            RuleMatch ruleMatch = new RuleMatch(this, elem.getStart(), elem.getEnd()+1, "Schwierige Wortwendung " + keyword + " gefunden.");
+            RuleMatch ruleMatch = new RuleMatch(this, elem.getStart(), elem.getEnd()+1, "Metapher/Redewendung '" + keyword + "' gefunden.");
             if (keyword2replacement.containsKey(keyword)) {
                 ruleMatch.setSuggestedReplacement((String) keyword2replacement.get(keyword));  // the user will see this as a suggested correction
             }
             else {
-                ruleMatch.setSuggestedReplacement("Bitte verwenden Sie eine verständlichere Wendung oder umschreiben Sie die Wortwendung.");
+                ruleMatch.setSuggestedReplacement("Bitte verwenden sie keine Metaphern oder Redewendungen.");
             }
             ruleMatches.add(ruleMatch);
         }
