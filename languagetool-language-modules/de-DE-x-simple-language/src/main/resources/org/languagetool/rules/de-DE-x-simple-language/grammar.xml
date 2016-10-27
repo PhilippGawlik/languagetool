@@ -487,7 +487,8 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
             </rule>
         </rulegroup>
 
-        <rulegroup id="SATZ" name="Leichte Sprache: Satz">
+        <!--rule finds long sentences and markes the sentences to long tail     -->
+<!--        <rulegroup id="SATZ" name="Leichte Sprache: Satz">
             <rule>
                 <pattern>
                     <token><exception scope="previous" regexp="yes">.*</exception></token>
@@ -513,10 +514,10 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                 <example>Das hier ist ein kurzer Satz.</example>
                 <example correction="">Das hier ist kein kurzer Satz, sondern eher was längeres mal <marker>zum Testen.</marker></example>
             </rule>
-        </rulegroup>
+        </rulegroup>-->
 
-        <!--rule finds long sentences and markes the wohle sentence     -->
-<!--        <rulegroup id="SATZ" name="Leichte Sprache: Satz">
+        <!--rule finds long sentences and markes the whole sentence     -->
+        <rulegroup id="SATZ" name="Leichte Sprache: Satz">
             <rule>
                 <pattern>
                     <token><exception scope="previous" regexp="yes">.*</exception></token>
@@ -540,7 +541,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                 <example>Das hier ist ein kurzer Satz.</example>
                 <example correction=""><marker>Das hier ist kein kurzer Satz, sondern eher was längeres mal zum Testen.</marker></example>
             </rule>
-        </rulegroup>-->
+        </rulegroup>
 
         <rulegroup name="Leichte Sprache: Schwierige Wörter" id="SCHWIERIGE_WOERTER_XML">
             <rule>
