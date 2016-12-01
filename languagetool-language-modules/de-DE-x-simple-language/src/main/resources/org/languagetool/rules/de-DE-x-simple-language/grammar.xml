@@ -38,7 +38,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
 
         <rule id="FRAGEN" name="Leichte Sprache: Fragen">
             <regexp>.*\?.*</regexp>
-            <message>Vermeiden Sie Fragen.</message>
+            <message>Vermeiden Sie Fragen - vor allem rhetorische. Schreiben Sie immer, was Sie meinen.</message>
             <short>Fragen vermeiden.</short>
             <example correction=""><marker>Ist dies eine Frage?</marker></example>
             <example>Dies ist keine Frage!</example>
@@ -48,8 +48,8 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
             <pattern>
                 <token postag='VER:.*PRT.*' postag_regexp='yes'/>
             </pattern>
-            <message>Vermeiden Sie die 1. Vergangenheitsform (Präteritum). Schreiben Sie in der 2. Vergangenheitsfrom (Perfekt).</message>
-            <short>Perfekt vermeiden.</short>
+            <message>Vermeiden Sie Präteritum (1. Vergangenheitsform), nutzen Sie stattdessen Perfekt (2. Vergangenheitsform).</message>
+            <short>Präteritum vermeiden.</short>
             <example correction="">Ich <marker>ging</marker> einkaufen.</example>
             <example>Ich bin einkaufen gegangen.</example>
         </rule>
@@ -81,7 +81,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                 <token/>
                 <token/>
             </pattern>
-            <message>Vermeiden Sie Verneinungen.</message>
+            <message>Vermeiden Sie Verneinungen. Benutzen Sie positive Sprache.</message>
             <short>Verneinungen vermeiden.</short>
             <example correction="">Peter will <marker>nicht länger bleiben</marker>.</example>
             <example>Peter will gehen.</example>
@@ -91,7 +91,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
             <pattern case_sensitive='no'>
                 <token regexp='yes' postag='ADJ:PRD:GRU'>un(?!ter)[A-Za-zöÖäÄüÜß]*</token>
             </pattern>
-            <message>Vermeiden Sie das Negationsprefix 'un-'. Bitte verwenden Sie positive Wortformen.</message>
+            <message>Vermeiden Sie das Negationsprefix 'un-'. Verwenden Sie stattdessen positive Wortformen.</message>
             <short>Postive Wortform verwenden.</short>
             <example>Das ist aber <marker>hässlich</marker>!</example>
             <example correction="">Das ist aber <marker>unschön</marker>!</example>
@@ -101,7 +101,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
             <pattern>
                 <token regexp="yes">\p{L}{14,}</token>
             </pattern>
-            <message>Dieses Wort hat mehr als dreizehn Buchstaben. Vermeiden Sie lange Wörter.</message>
+            <message>Dieses Wort hat mehr als dreizehn Buchstaben. Benutzen Sie kurze Wörter.</message>
             <short>Lange Wörter vermeiden.</short>
             <example>Die Schifffahrt auf der Donau ist beliebt.</example>
             <example correction="">Die <marker>Donaudampfschifffahrt</marker> ist beliebt.</example>
@@ -110,10 +110,10 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
         <rulegroup id="ABKUERZUNG" name="Leichte Sprache: Abkürzung">
             <rule>
                 <pattern>
-                    <token inflected='yes' regexp='yes'>Abb|Abf|Abh|Abk|abl|Abs|abschl|Abschl|Abschn|Abt|abw|abzügl|Adj|agr|al|allg|amerikan|amtl|Amtsbez|Anh|anim|anl|Anl|Anm|Antw|Apr|Art|Auff|Aufl|Aug|Ausf|ausl|Bd|bearb|beil|Beil|Bek|Bem|bes|best|betr|Betriebsw|bez|Bez|Bhf|biol|bish|Bk|Bln|bspw|Buchst|bw|bzw|ca|can|chines|cult|cur|Dat|DDr|dent|Dez|Di|Do|Dpl|Dr|Dr|Dres|DrPH|Drs|dt|Dt|ebd|ehem|eigtl|Einf|Eing|Einl|einschl|eng|Entsch|entspr|Erg|etc|Etg|Eur|ev|evtl|Fa|Fam|Feb|Febr|ff|fortl|Forts|Fr|franz|frz|gdw|geb|gegr|gem|gen|gepfl|ges|gesch|gesetzl|gez|ggf|ggl|grds|griech|habil|Hbf|Hbhf|hom|hort|Hr|Hrsg|hum|inkl|insb|insbes|int|internat|iur|Jahrh|Jan|Jh|Jhd|Jhr|jr|Jul|Jun|Kap|kath|Kdm|Kennz|Komm|kompl|Kr|Krh|krit|Kto|künstl|Kz|Landkr|lat|led|lfd|Lfg|lic|Lit|lt|Mag|Mär|math|Math|mdl|med|medic|merc|mglw|Mi|Min|Mio|mittelalterl|Mo|möbl|möglicherw|mont|Mrd|mtl|mult|mündl|mus|nat|nat|No|norw|Nov|Nr|od|oec|oec|Okt|österr|paed|pharm|phil|physiol|Pkt|pol|poln|Prof|publ|Ref|rer|russ|Sa|sc|schriftl|schwed|schweizer|scil|sec|Sek|Sep|Sept|sic|silv|Slg|So|soc|sog|sogen|Sportwiss|Std|Str|tägl|tech|techn|teilw|theol|Tit|tlw|troph|türk|umstr|unbest|unveröff|unveröffentl|urspr|ursprüngl|usf|usw|Verf|veröffentl|Verw|Verww|vet|vgl|Vis|vllt|vollst|voraussichtl|vorl|vorm|vs|vsl|Wdh|wg|whd|Whg|wiss|wöchentl|Ziff|zit|zsm|zul|zus|zust|zutr|zzgl</token>
+                    <token inflected='yes' regexp='yes'>Abb|Abf|Abh|Abk|abl|Abs|abschl|Abschl|Abschn|Abt|abw|abzügl|Adj|agr|al|allg|amerikan|amtl|Amtsbez|Anh|anim|anl|Anl|Anm|Antw|Apr|Art|Auff|Aufl|Aug|Ausf|ausl|Bd|bearb|beil|Beil|Bek|Bem|bes|best|betr|Betriebsw|bez|Bez|Bhf|biol|bish|Bk|Bln|bspw|Buchst|bw|bzw|ca|can|chines|cult|cur|Dat|DDr|dent|Dez|Di|Do|Dpl|Dr|Dres|DrPH|Drs|dt|Dt|ebd|ehem|eigtl|Einf|Eing|Einl|einschl|eng|Entsch|entspr|Erg|etc|Etg|Eur|ev|evtl|Fa|Fam|Feb|Febr|ff|fortl|Forts|Fr|franz|frz|gdw|geb|gegr|gem|gen|gepfl|ges|gesch|gesetzl|gez|ggf|ggl|grds|griech|habil|Hbf|Hbhf|hom|hort|Hr|Hrsg|hum|inkl|insb|insbes|int|internat|iur|Jahrh|Jan|Jh|Jhd|Jhr|jr|Jul|Jun|Kap|kath|Kdm|Kennz|Komm|kompl|Kr|Krh|krit|Kto|künstl|Kz|Landkr|lat|led|lfd|Lfg|lic|Lit|lt|Mag|Mär|math|Math|mdl|med|medic|merc|mglw|Mi|Min|Mio|mittelalterl|Mo|möbl|möglicherw|mont|Mrd|mtl|mult|mündl|mus|nat|nat|No|norw|Nov|Nr|od|oec|oec|Okt|österr|paed|pharm|phil|physiol|Pkt|pol|poln|Prof|publ|Ref|rer|russ|Sa|sc|schriftl|schwed|schweizer|scil|sec|Sek|Sep|Sept|sic|silv|Slg|So|soc|sog|sogen|Sportwiss|Std|Str|tägl|tech|techn|teilw|theol|Tit|tlw|troph|türk|umstr|unbest|unveröff|unveröffentl|urspr|ursprüngl|usf|usw|Verf|veröffentl|Verw|Verww|vet|vgl|Vis|vllt|vollst|voraussichtl|vorl|vorm|vs|vsl|Wdh|wg|whd|Whg|wiss|wöchentl|Ziff|zit|zsm|zul|zus|zust|zutr|zzgl</token>
                     <token>.</token>
                 </pattern>
-                <message>Vermeiden Sie Abkürzungen.</message>
+                <message>Verzichten Sie auf Abkürzungen. Ausnahmen, die jeder kennt, z.B. WC, Dr., LKW.</message>
                 <short>Abkürzungen vermeiden.</short>
                 <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
             </rule>
@@ -121,7 +121,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                 <pattern>
                     <token regexp="yes">\p{Lu}{2,}</token>
                 </pattern>
-                <message>Vermeiden Sie Abkürzungen.</message>
+                <message>Verzichten Sie auf Abkürzungen. Ausnahmen, die jeder kennt, z.B. WC, Dr., LKW.</message>
                 <short>Abkürzungen vermeiden.</short>
                 <example>Das <marker>Köchelverzeichnis</marker> ist ein Verzeichnis der Kompositionen von Mozart.</example>
                 <example correction="">Das <marker>KV</marker> ist ein Verzeichnis der Kompositionen von Mozart.</example>
@@ -132,7 +132,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                     <token regexp="yes">\p{L}</token><token>.</token>
                     <token regexp="yes">\p{L}</token><token>.</token>
                 </pattern>
-                <message>Vermeiden Sie Abkürzungen.</message>
+                <message>Verzichten Sie auf Abkürzungen. Ausnahmen, die jeder kennt, z.B. WC, Dr., LKW.</message>
                 <short>Abkürzungen vermeiden.</short>
                 <example>Die Sozialdemokratische Partei Deutschlands.</example>
                 <example correction="">Die <marker>S.P.D.</marker></example>
@@ -141,7 +141,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                 <pattern>
                     <token postag_regexp="yes" postag="ABK:.*"><exception regexp="yes">\p{L}</exception></token>
                 </pattern>
-                <message>Vermeiden Sie Abkürzungen.</message>
+                <message>Verzichten Sie auf Abkürzungen. Ausnahmen, die jeder kennt, z.B. WC, Dr., LKW.</message>
                 <short>Abkürzungen vermeiden.</short>
                 <example>Wir brauchen Milch, Eier <marker>und so weiter</marker>.</example>
                 <example correction="">Wir brauchen Milch, Eier <marker>usw</marker>.</example>
@@ -154,7 +154,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                     <token inflected="yes" postag_regexp="yes" postag="VER:AUX:.*" skip="-1">werden</token>
                     <token postag_regexp="yes" postag="PA2:PRD:.*|VER:PA2:.*"/>
                 </pattern>
-                <message>Vermeiden Sie passive Formulierungen. Schreiben Sie im aktiv.</message>
+                <message>Vermeiden sie passive Formulierungen. Verwenden Sie aktive Wörter.</message>
                 <short>Passiv vermeiden.</short>
                 <example>Jemand feuerte den Manager.</example>
                 <example correction="">Der Manager <marker>wurde gefeuert</marker>.</example>
@@ -164,7 +164,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                     <token postag_regexp="yes" postag="PA2:PRD:.*|VER:PA2:.*"/>
                     <token inflected="yes" postag_regexp="yes" postag="VER:AUX.*"><exception>,</exception>werden</token>
                 </pattern>
-                <message>Vermeiden Sie passive Formulierungen. Schreiben Sie im aktiv.</message>
+                <message>Vermeiden sie passive Formulierungen. Verwenden Sie aktive Wörter.</message>
                 <short>Passiv vermeiden.</short>
                 <example>Sie feuerten den Manager.</example>
                 <example correction="">Als der Manager <marker>gefeuert wurde</marker>.</example>
@@ -176,7 +176,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                     <token negate="yes" postag="KON:NEB"/>
                     <token inflected="yes" postag_regexp="yes" postag="VER:AUX:.*"><exception>,</exception>werden</token>
                 </pattern>
-                <message>In diesem Satz haben Sie das Passiv verwendet. Benutzen Sie aktive Wörter.</message>
+                <message>Vermeiden sie passive Formulierungen. Verwenden Sie aktive Wörter.</message>
                 <example>Sie mahnten den Manager ab und feuerten ihn.</example>
                 <example type="incorrect">Als der Manager <marker>abgemahnt und gefeuert wurde</marker>.</example>
             </rule>
@@ -220,7 +220,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                     </marker>
                     <token postag_regexp="yes" postag="SUB:.*"/>
                 </pattern>
-                <message>Genitiv gefunden. Vermeiden Sie den Genitiv.</message>
+                <message>Vermeiden Sie Formulierungen im Genitiv.</message>
                 <example>Von dem Fahrrad der Sattel ist nass.</example>
                 <example correction=""><marker>Deines Fahrrads</marker> Sattel ist nass.</example>
             </rule>
@@ -232,7 +232,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                     </marker>
                     <token postag_regexp="yes" postag="SUB:.*"/>
                 </pattern>
-                <message>Genitiv gefunden. Vermeiden Sie den Genitiv.</message>
+                <message>Vermeiden Sie Formulierungen im Genitiv.</message>
                 <example>Von deinem Fahrrad der Sattel ist nass.</example>
                 <example correction=""><marker>Des Fahrrads</marker> Sattel ist nass.</example>
             </rule>
@@ -268,7 +268,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                     <token>,</token>
                     <token negate_pos="yes" postag_regexp="yes" postag="VER:.*"/>
                 </pattern>
-                <message>Vermeiden Sie indirekte Rede.</message>
+                <message>Vermeiden Sie die indirekte Rede.</message>
                 <short>Indirekte Rede vermeiden.</short>
                 <example>Er sagte: ich bin 30 Jahre alt.</example>
                 <example correction="">Er <marker>sagte, er</marker> sei 30 Jahre alt.</example>
@@ -306,7 +306,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
             <pattern>
                 <token regexp="yes">(M{0,4}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3}))|(m{0,4}(cm|cd|d?c{0,3})(xc|xl|l?x{0,3})(ix|iv|v?i{0,3}))<exception>cm</exception></token>
             </pattern>
-            <message>Vermeiden Sie römische Zahlen. Benutzen Sie arabische Zahlen.</message>
+            <message>Vermeiden Sie römische Zahlen, nutzen Sie stattdessen arabische Zahlen.</message>
             <short>Römische Zahlen vermeiden.</short>
             <example>Stufe 4</example>
             <example>Das ist 4 cm lang.</example>
@@ -319,7 +319,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                 <pattern>
                     <token spacebefore="yes" regexp="yes">\p{N}{5,}</token>
                 </pattern>
-                <message>Vermeiden Sie hohe Zahlen.</message>
+                <message>Vermeiden Sie hohe Zahlen. Benutzen Sie Vergleiche oder ungenaue Angaben.</message>
                 <short>Hohe Zahl vermeiden.</short>
                 <example>Sehr viele Menschen</example>
                 <example correction="">Bis zu <marker>100000</marker> Menschen</example>
@@ -330,7 +330,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                     <token spacebefore="no">.</token>
                     <token spacebefore="no" regexp="yes">\p{N}{3}</token>
                 </pattern>
-                <message>Vermeiden Sie hohe Zahlen.</message>
+                <message>Vermeiden Sie hohe Zahlen. Benutzen Sie Vergleiche oder ungenaue Angaben.</message>
                 <short>Hohe Zahl vermeiden.</short>
                 <example>Sehr viele Menschen</example>
                 <example correction=""><marker>100.000</marker> Menschen</example>
@@ -341,7 +341,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                     <token spacebefore="no">,</token>
                     <token spacebefore="no" regexp="yes">\p{N}+</token>
                 </pattern>
-                <message>Vermeiden Sie Kommazahlen.</message>
+                <message>Vermeiden Sie Kommazahlen. Benutzen Sie Vergleiche oder ungenaue Angaben.</message>
                 <short>Kommazahlen vermeiden.</short>
                 <example>Etwa 4</example>
                 <example correction=""><marker>3,91</marker></example>
@@ -350,7 +350,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                 <pattern>
                     <token regexp="yes">\p{N}+%</token>
                 </pattern>
-                <message>Vermeiden Sie Prozentangaben.</message>
+                <message>Vermeiden Sie Prozentangaben. Benutzen Sie Vergleiche oder ungenaue Angaben.</message>
                 <short>Prozentangaben vermeiden.</short>
                 <example>14 Prozent</example>
                 <example correction=""><marker>14%</marker></example>
@@ -360,7 +360,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                     <token regexp="yes">\p{N}+</token>
                     <token>%</token>
                 </pattern>
-                <message>Vermeiden Sie Prozentangaben.</message>
+                <message>Vermeiden Sie Prozentangaben. Benutzen Sie Vergleiche oder ungenaue Angaben.</message>
                 <short>Prozentangaben vermeiden.</short>
                 <example>14 Prozent</example>
                 <example correction=""><marker>14 %</marker></example>
@@ -372,7 +372,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                 <token postag="ZAL"/>
             </pattern>
             <message>Zahlwort gefunden. Fragen Sie die Prüfer und Prüferinnen: Wie sollen Sie Zahlen schreiben? Meistens sind Ziffern leichter als Worte.</message>
-            <short>Korekte Zahlnotation verwenden.</short>
+            <short>Korrekte Zahlnotation verwenden.</short>
             <example>Es waren 7 Leute da.</example>
             <example correction="">Es waren <marker>sieben</marker> Leute da.</example>
         </rule>
@@ -386,7 +386,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                     <token spacebefore="no">.</token>
                     <token spacebefore="no" regexp="yes">(19|20)?\p{N}{2}</token>
                 </pattern>
-                <message>Datumsangabe gefunden. Fragen Sie die Prüfer und Prüferinnen: Wie sollen Sie ein Datum schreiben?</message>
+                <message>Datumsangabe gefunden. Versuchen Sie, das Datum möglichst einfach darzustellen.</message>
                 <example>Am 31. Januar 2011 geht es los.</example>
                 <example correction="">Am <marker>31.01.2011</marker> geht es los.</example>
             </rule>
@@ -410,7 +410,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                     <token regexp="yes">(Januar|Februar|März|April|Mai|Juni|Juli|August|September|Oktober|November|Dezember)</token>
                     <token regexp='yes'>(19|20)?\p{N}{2}</token>
                 </pattern>
-                <message>Datum mit Monatsnamen gefunden. Fragen Sie die Prüfer und Prüferinnen: Wie sollen Sie ein Datum schreiben?</message>
+                <message>Datum mit Monatsnamen gefunden. Versuchen Sie, das Datum möglichst einfach darzustellen.</message>
                 <short>Monatsnamen im Datum vermeiden.</short>
                 <example>Am 31.1.2012 geht es los.</example>
                 <example correction="">Am <marker>31. Januar 2012</marker> geht es los.</example>
@@ -433,7 +433,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                     <token spacebefore="no">.</token>
                     <token regexp="yes">(Januar|Februar|März|April|Mai|Juni|Juli|August|September|Oktober|November|Dezember)</token>
                 </pattern>
-                <message>Datum mit Monatsnamen gefunden. Fragen Sie die Prüfer und Prüferinnen: Wie sollen Sie ein Datum schreiben?</message>
+                <message>Datum mit Monatsnamen gefunden. Versuchen Sie, das Datum möglichst einfach darzustellen.</message>
                 <short>Monatsnamen im Datum vermeiden.</short>
                 <example>Am 31.1. geht es los.</example>
                 <example correction="">Am <marker>31. Januar</marker> geht es los.</example>
@@ -469,7 +469,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                     <token>)</token>
                     <token regexp='yes'>\p{N}{5,}+</token>
                 </pattern>
-                <message>Bitte setzen Sie bei Telefonnummern ein Leerzeichen nach jeder zweiten Zahl und verwenden Sie wenn notwendig einen Bindestrich um Vorwahl und persönliche Nummer voneinander zu trennen.</message>
+                <message>Setzen Sie Telefonnummern mit Leerzeichen nach jeder zweiten Ziffer. Verzichten Sie auf Klammern oder Sonderzeichen.</message>
                 <short>Richtlinie für Telefonnummern beachten.</short>
                 <example correction=''><marker>(0201) 333121</marker></example>
                 <example>02 01 33 31 21</example>
@@ -480,7 +480,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                     <token>/</token>
                     <token regexp='yes'>\p{N}{5,}+</token>
                 </pattern>
-                <message>Bitte setzen Sie bei Telefonnummern ein Leerzeichen nach jeder zweiten Zahl und verwenden Sie wenn notwendig einen Bindestrich um Vorwahl und persönliche Nummer voneinander zu trennen.</message>
+                <message>Setzen Sie Telefonnummern mit Leerzeichen nach jeder zweiten Ziffer. Verzichten Sie auf Klammern oder Sonderzeichen.</message>
                 <short>Richtlinie für Telefonnummern beachten.</short>
                 <example correction=''><marker>0201 / 333121</marker></example>
                 <example>02 01 - 33 31 21</example>

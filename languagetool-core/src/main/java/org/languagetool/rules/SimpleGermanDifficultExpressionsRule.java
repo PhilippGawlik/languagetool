@@ -13,7 +13,7 @@ import java.util.*;
 public class SimpleGermanDifficultExpressionsRule extends Rule {
 
     @Override
-    public String getId() {return "SCHWIERIGEWOERTER";}
+    public String getId() {return "SCHWIERIGE_WOERTER_JAVA";}
 
     @Override
     public String getDescription() {
@@ -55,12 +55,12 @@ public class SimpleGermanDifficultExpressionsRule extends Rule {
 //            System.out.println(" \tEnd: " + elem.getEnd());
 //            System.out.println(" \tKeyword: " + keyword);
 
-            RuleMatch ruleMatch = new RuleMatch(this, elem.getStart(), elem.getEnd()+1, "Schwierige Wortwendung " + keyword + " gefunden.");
+            RuleMatch ruleMatch = new RuleMatch(this, elem.getStart(), elem.getEnd()+1, "Die Wendung " + keyword + " ist schwer verständlich. Nutzen Sie eine Umschreibung.");
             if (keyword2replacement.containsKey(keyword)) {
                 ruleMatch.setSuggestedReplacement((String) keyword2replacement.get(keyword));  // the user will see this as a suggested correction
             }
             else {
-                ruleMatch.setSuggestedReplacement("Bitte verwenden Sie eine verständlichere Wendung oder umschreiben Sie die Wortwendung.");
+                ruleMatch.setSuggestedReplacement("Diese Wendung ist schwer verständlich. Nutzen Sie eine Umschreibung.");
             }
             ruleMatches.add(ruleMatch);
         }

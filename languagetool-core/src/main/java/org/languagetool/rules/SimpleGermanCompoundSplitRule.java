@@ -18,7 +18,7 @@ import de.danielnaber.jwordsplitter.*;
 public class SimpleGermanCompoundSplitRule extends Rule {
 
     @Override
-    public String getId() {return "GERMANCOMPOUNDSPLITRULE";}
+    public String getId() {return "KOMPOSITA";}
 
     @Override
     public String getDescription() {
@@ -103,8 +103,7 @@ public class SimpleGermanCompoundSplitRule extends Rule {
                                 String sugCorrect = generateSuggestedCorrection(token, parts);
                                 RuleMatch ruleMatch = new RuleMatch(this, token.getStartPos(),
                                         token.getEndPos(),
-                                        "Bitte zerlegen sie zusammengesetzte Nomen. Verknüpfen Sie die einzelen Teile" +
-                                                " durch Bindestriche.");
+                                        "Trennen Sie komplexe Wörter entsprechend der Sinneinheiten durch Bindestriche.");
                                 // the user will see this as a suggested correction
                                 ruleMatch.setSuggestedReplacement(sugCorrect);
                                 ruleMatches.add(ruleMatch);

@@ -55,12 +55,12 @@ public class SimpleGermanMetaphorsRule extends Rule {
 //            System.out.println(" \tEnd: " + elem.getEnd());
 //            System.out.println(" \tKeyword: " + keyword);
 
-            RuleMatch ruleMatch = new RuleMatch(this, elem.getStart(), elem.getEnd()+1, "Metapher/Redewendung '" + keyword + "' gefunden.");
+            RuleMatch ruleMatch = new RuleMatch(this, elem.getStart(), elem.getEnd()+1, "Metapher/Redewendung '" + keyword + "' gefunden");
             if (keyword2replacement.containsKey(keyword)) {
                 ruleMatch.setSuggestedReplacement((String) keyword2replacement.get(keyword));  // the user will see this as a suggested correction
             }
             else {
-                ruleMatch.setSuggestedReplacement("Bitte verwenden sie keine Metaphern oder Redewendungen.");
+                ruleMatch.setSuggestedReplacement("Vermeiden Sie Metaphern oder Redewendungen.");
             }
             ruleMatches.add(ruleMatch);
         }
