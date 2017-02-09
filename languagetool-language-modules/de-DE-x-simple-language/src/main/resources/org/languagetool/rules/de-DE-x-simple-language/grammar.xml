@@ -87,15 +87,27 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
             <example>Peter will gehen.</example>
         </rule>
 
+        <!--Mark adjectives that are included in list as rule violation -->
         <rule id="NEGATION_PREFIX_UN" name="Negation Präfix un-">
             <pattern case_sensitive='no'>
-                <token regexp='yes' postag='ADJ:PRD:GRU'>un(?!ter)[A-Za-zöÖäÄüÜß]*</token>
+                <token regexp='yes' postag_regexp="yes" postag='ADJ:.*'>[u|U]n(abhängig|absehbar|absetzbar|absichtlich|abwendbar|achtsam|akzeptabel|anfechtbar|angebracht|angefochten|angekündigt|angemeldet|angemessen|angenehm|angepasst|angestrengt|angetastet|annehmbar|ansehnlich|anständig|anstössig|anzweifelbar|appetitlich|artig|artikuliert|attraktiv|aufdringlich|auffällig|aufgefordert|aufgeklärt|aufgeregt|aufgeräumt|aufmerksam|aufrichtig|ausführbar|ausgebildet|ausgefüllt|ausgeglichen|ausgegoren|ausgeschlafen|ausgesetzt|ausgesprochen|autorisiert|autoritär|barmherzig|beabsichtigt|beachtet|beachtlich|beanstandet|beantwortet|bearbeitet|bebaut|bedacht|bedachtsam|bedeckt|bedenklich|bedeutend|bedingt|bedruckt|beeindruckt|beeinflussbar|beendet|befahrbar|befahren|befangen|befleckt|befriedigend|befriedigt|befristet|befruchtet|befugt|begabt|begehbar|beglaubigt|beglichen|begrenzt|begründbar|begründet|behaart|behandelbar|behandelt|behauen|behelligt|beherrschbar|beherrscht|behilflich|behindert|beholfen|bekannt|bekleidet|bekümmert|belastet|belebt|beleckt|belehrbar|beleuchtet|belichtet|beliebt|bemannt|bemerkt|bemittelt|benutzbar|benutzt|beobachtet|bequem|berechtigt|berufen|berücksichtigt|berührbar|berührt|beschalt|bescheiden|beschrankt|beschrieben|beschränkt|beschwert|beschädigt|beschäftigt|beschützt|beseelt|besetzt|besiegt|besonnen|besorgt|bespannt|bespielbar|bespielt|bestechlich|bestimmbar|bestimmt|bestritten|beständig|bestätigt|beteiligt|betont|betreten|beträchtlich|bewacht|bewaffnet|beweglich|bewegt|bewehrt|beweisbar|bewiesen|bewohnbar|bewohnt|bewusst|bewältigt|bezahlt|bezwingbar|bezähmbar|billig|blutig|brauchbar|brennbar|brüderlich|bunt|bussfertig|bürgerlich|bürokratisch|charakteristisch|christlich|dankbar|datiert|definierbar|definiert|deklinierbar|demokratisch|denkbar|deutbar|deutlich|deutsch|dialektisch|dicht|differenziert|diplomatisch|diskutabel|diszipliniert|dogmatisch|dramatisch|duldsam|durchführbar|durchlässig|durchschaubar|durchsichtig|eben|ebenbürtig|echt|edel|effektiv|egal|ehelich|ehrenhaft|ehrerbietig|ehrlich|eigennützig|eigentlich|einbringlich|eingeladen|eingeschränkt|eingestanden|eingeweiht|einig|eins|einsichtig|eitel|elastisch|elegant|emanzipiert|empfindlich|empfänglich|endlich|entbehrlich|entdeckt|entschieden|entschlossen|entschuldbar|entschuldigt|entwirrbar|erfahren|erforscht|erfreulich|erfüllbar|erfüllt|ergiebig|erheblich|erkannt|erkennbar|erklärbar|erlaubt|erledigt|ernst|erotisch|erprobt|erreichbar|erreicht|erschlossen|erschrocken|erschwinglich|ersetzbar|erträglich|erwartet|erwidert|erwähnt|erwünscht|erziehbar|erzogen|fachmännisch|fair|fassbar|feierlich|fein|fertig|fest|flektiert|flexibel|flott|folgsam|frankiert|fraulich|frei|freiwillig|freundlich|friedlich|frisiert|froh|fromm|fruchtbar|fundiert|fähig|förmlich|galant|gangbar|gar|gastlich|geahndet|geahnt|gebeten|gebeugt|gebildet|gebleicht|geboren|gebrannt|gebraucht|gebremst|gebrochen|gebräuchlich|gebunden|gebührend|gedeckt|gedient|gedruckt|geduldig|geeignet|gefahren|gefestigt|gefiltert|geflügelt|geformt|gefragt|gefrühstückt|gefährdet|gefährlich|gefällig|gefärbt|gefügig|gegessen|gegliedert|geheissen|geheizt|gehemmt|geheuer|gehindert|gehorsam|gehörig|gehört|geil|geistig|geklärt|gekocht|gekrönt|gekämmt|gekündigt|gekünstelt|gekürzt|geladen|gelebt|gelegen|gelehrig|gelehrt|gelenk|gelenkig|gelernt|gelesen|geliebt|gelogen|gelöscht|gelöst|gelüftet|gemacht|gemein|gemessen|gemindert|gemischt|gemäss|gemütlich|genannt|genau|genehmigt|geniert|geniessbar|genutzt|genügend|genützt|geordnet|gepaart|gepflegt|geplant|geprüft|geraten|gerechnet|gerecht|gerechtfertigt|geregelt|gereimt|gerufen|gerupft|gerächt|gerührt|gesagt|gesalzen|gesattelt|geschehen|gescheut|geschichtlich|geschickt|geschlagen|geschliffen|geschmeidig|geschminkt|geschmälert|geschoren|geschrieben|geschult|geschwächt|geschält|geschönt|geschützt|gesehen|gesellig|gesetzlich|gesetzt|gesichert|gesittet|gespitzt|gespritzt|gestalt|gestaltet|gestempelt|gestillt|gestraft|gestört|gesund|gesättigt|gesäuert|gesäumt|gesühnt|gesüsst|getan|getauft|geteilt|getragen|getreu|getrübt|gewandt|gewaschen|gewiss|gewohnt|gewollt|gewöhnlich|gewürzt|gezeichnet|gezielt|geziemend|gezuckert|gezwungen|gezählt|gezähmt|gezügelt|geändert|geöffnet|geübt|giftig|glaubhaft|glaubwürdig|gleich|gleichartig|gleichförmig|gleichmässig|gleichzeitig|glimpflich|gläubig|glücklich|gnädig|grade|grammatisch|graziös|greifbar|gut|gültig|günstig|haltbar|haltig|handlich|harmonisch|heilbar|heilig|heimlich|hinterfragt|historisch|hygienisch|höflich|hörbar|hübsch|identifiziert|informiert|intelligent|interessant|interessiert|irdisch|kalkulierbar|kameradschaftlich|kenntlich|keusch|kindlich|kirchlich|klar|kleidsam|klug|kollegial|komfortabel|kompetent|kompliziert|kontrollierbar|kontrolliert|konventionell|konzentriert|koordiniert|korrekt|kriegerisch|kritisch|kultiviert|kundig|körperlich|kündbar|künstlerisch|lackiert|lang|lauter|lebendig|leidig|lesbar|leserlich|lieb|liebenswürdig|limitiert|liniert|liniiert|literarisch|logisch|lösbar|löslich|manierlich|massgeblich|melodisch|menschlich|merklich|messbar|methodisch|militärisch|missverständlich|mittelbar|modern|modisch|moralisch|motiviert|musikalisch|musisch|männlich|möbliert|möglich|mündig|nachgiebig|nachsichtig|natürlich|normal|nötig|ordentlich|organisch|organisiert|orthodox|orthographisch|parteiisch|passend|passierbar|pathetisch|persönlich|pfändbar|plaziert|poetisch|poliert|politisch|populär|praktisch|problematisch|produktiv|professionell|programmgemäss|proportioniert|präzis|pädagogisch|pünktlich|qualifiziert|rasiert|rationell|ratsam|real|realistisch|recht|rechtmässig|redigiert|redlich|reell|reflektiert|regelmässig|reif|rein|reinlich|rentabel|rettbar|richtig|ritterlich|romantisch|rund|rühmlich|sachgemäss|sachlich|sanft|sauber|scharf|scheinbar|schicklich|schlagbar|schlüssig|schmelzbar|schwer|schädlich|schätzbar|schön|schöpferisch|selbständig|selig|sensibel|sentimental|seriös|sicher|sichtbar|silbisch|sinnig|sittlich|soldatisch|solid|solidarisch|sorgfältig|sozial|spektakulär|spezifisch|spielbar|sportlich|stabil|standesgemäss|statthaft|sterblich|stetig|stimmig|stofflich|strittig|strukturiert|sträflich|anständig|symmetrisch|sympathisch|systematisch|talentiert|tauglich|teilbar|teilhaft|tief|tilgbar|tot|tragbar|trainiert|trennbar|treu|tunlich|typisch|tätig|tüchtig|umgänglich|umkehrbar|umstritten|unterbrochen|unterscheidbar|verantwortbar|verantwortlich|verarbeitet|verbindlich|verbraucht|verbürgt|verdaulich|verdaut|verdient|verdorben|verdrossen|verdächtig|verdünnt|verehelicht|vereinbar|verfälscht|verfänglich|vergessen|vergleichbar|vergoren|vergällt|vergänglich|verheiratet|verhältnismässig|verhüllt|verkabelt|verklemmt|verkrampft|verkäuflich|verlangt|verletzbar|verletzlich|verletzt|verlässlich|vermeidbar|vermeidlich|vermerkt|vermindert|vermischt|vermittelbar|vermittelt|vermutet|vermählt|vermögend|vernünftig|verpackt|verputzt|verrichtet|verrückt|verschleiert|verschliessbar|verschlossen|verschlüsselt|verschuldet|verschämt|versehrt|verseucht|versorgt|verstanden|verstellt|versteuert|verständig|verständlich|versucht|versöhnbar|vertraut|vertretbar|verträglich|verwandt|verwechselbar|verwehrt|verwertbar|verwundet|verzagt|verzeihlich|verzichtbar|verzinslich|verzollt|veränderbar|veränderlich|verändert|veröffentlicht|vollendet|vollkommen|vollständig|vorbereitet|voreingenommen|vorhergesehen|vorhersehbar|vorschriftsmässig|vorsichtig|vorstellbar|vorteilhaft|wahr|wahrhaftig|wahrscheinlich|wandelbar|weiblich|weise|weit|wert|wesentlich|wichtig|widerlegbar|widerruflich|widersprochen|wiederholbar|willig|willkommen|willkürlich|wirklich|wirksam|wirtlich|wirtschaftlich|wissend|wissenschaftlich|wissentlich|wohnlich|würdig|zart|zeitgemäss|zeitig|zensiert|zerbrechlich|zerkaut|zerstörbar|zerstört|ziemlich|zivilisiert|zufrieden|zugänglich|zulänglich|zulässig|zumutbar|zurechnungsfähig|zureichend|zusammenhängend|zuständig|zutreffend|zuträglich|zuverlässig|zweckmässig|zweideutig|zweifelhaft|zählbar|zähmbar|ähnlich|ästhetisch|ökonomisch|übel|überbietbar|überlegt|überprüfbar|überschaubar|übersetzbar|übersichtlich|übertragbar|übertroffen|überwindbar|überwindlich|üblich)[A-Za-zöÖäÄüÜß]*</token>
             </pattern>
             <message>Vermeiden Sie das Negationsprefix 'un-'. Verwenden Sie stattdessen positive Wortformen.</message>
             <short>Postive Wortform verwenden.</short>
             <example>Das ist aber <marker>hässlich</marker>!</example>
             <example correction="">Das ist aber <marker>unschön</marker>!</example>
         </rule>
+
+        <!--Allow list of non-productiv adjectives with 'un-' and mark all other as rule violation -->
+<!--        <rule id="NEGATION_PREFIX_UN" name="Negation Präfix un-">
+            <pattern case_sensitive='yes'>
+                <token regexp='yes' postag_regexp="yes" postag='ADJ:.*'>[u|U]n(?!(ar.*|bedarft.*|cinat.*|cus|d|dulat.*|entwegt.*|fall.*|garn|garisch.*|gefähr.*|glaub.*|gue|guiculata|gulatus|iVers.*|icus|iert.*|ifacial.*|ifarben.*|ifazial.*|ification|iflora.*|iform.*|ifktionell.*|ijournal.*|ilateral.*|ion.*|ipolar.*|isono.*|itaris.*ch|itegmisch.*|itis|ivalv.*|ivariat.*|iversal.*|iversaux|iversel.*|ivers.*|iwerbg|ixoid.*e|ser|sere|seres|sereins|serem|seren|serer|sern|sererseits|serm|sers|sre|srer|ten|ten.*|ter.*|torn|är.*|abänder.*|abkömm.*|abding.*|aussprechbar.*|bedarft.*|beeinflusst.*|begreiflich.*|behaust.*|beirrt.*|benützbar.*|benützt.*|bescholt.*|beseh.*|bestrumpft.*|beugbar.*|beweibt.*|botmässig.*|eidlich.*|einholbar.*|entwegt.*|erbeten.*|erhört.*|ergründbar.*|erspriesslich.*|fehlbar.*|förmig.*|gehalt.*|gehobelt.*|geschlechtlich.*|gezogen.*|glaublich.*|hold.*|merkbar.*|parteilich.*|prätentiös.*|regierbar.*|stet.*|streitig.*|tadelhaft.*|teilhaftig.*|umschränkt.*|umwunden.*|verblümt.*|verfroren.*|verhofft.*|verhohlen.*|veräusserlich.*|wegsam.*|wirsch.*|wägbar.*|ziemend.*))[A-Za-zöÖäÄüÜß]*</token>
+            </pattern>
+            <message>Vermeiden Sie das Negationsprefix 'un-'. Verwenden Sie stattdessen positive Wortformen.</message>
+            <short>Postive Wortform verwenden.</short>
+            <example>Das ist aber <marker>hässlich</marker>!</example>
+            <example correction="">Das ist aber <marker>unschön</marker>!</example>
+        </rule>-->
 
         <rule id="LANGES_WORT" name="Leichte Sprache: Langes Wort">
             <pattern>
@@ -117,7 +129,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                 <short>Abkürzungen vermeiden.</short>
                 <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
             </rule>
-            <rule>
+<!--            <rule>
                 <pattern>
                     <token regexp="yes">\p{Lu}{2,}</token>
                 </pattern>
@@ -125,17 +137,13 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                 <short>Abkürzungen vermeiden.</short>
                 <example>Das <marker>Köchelverzeichnis</marker> ist ein Verzeichnis der Kompositionen von Mozart.</example>
                 <example correction="">Das <marker>KV</marker> ist ein Verzeichnis der Kompositionen von Mozart.</example>
-            </rule>
+            </rule>-->
             <rule>
-                <pattern>
-                    <token regexp="yes">\p{L}</token><token>.</token>
-                    <token regexp="yes">\p{L}</token><token>.</token>
-                    <token regexp="yes">\p{L}</token><token>.</token>
-                </pattern>
+                <regexp>\p{Lu}\.(\p{Lu}\.)*</regexp>
                 <message>Verzichten Sie auf Abkürzungen. Ausnahmen, die jeder kennt, z.B. WC, Dr., LKW.</message>
                 <short>Abkürzungen vermeiden.</short>
                 <example>Die Sozialdemokratische Partei Deutschlands.</example>
-                <example correction="">Die <marker>S.P.D.</marker></example>
+                <example correction="">Die <marker>S.P.D.</marker>.</example>
             </rule>
             <rule>
                 <pattern>
@@ -304,7 +312,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
 
         <rule id="ROEMISCHE_ZAHL" name="Leichte Sprache: Römischen Zahl">
             <pattern>
-                <token regexp="yes">(M{0,4}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3}))|(m{0,4}(cm|cd|d?c{0,3})(xc|xl|l?x{0,3})(ix|iv|v?i{0,3}))<exception>cm</exception></token>
+                <token regexp="yes">(M{0,4}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3}))<exception>cm</exception></token>
             </pattern>
             <message>Vermeiden Sie römische Zahlen, nutzen Sie stattdessen arabische Zahlen.</message>
             <short>Römische Zahlen vermeiden.</short>
