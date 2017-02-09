@@ -44,7 +44,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
             <example>Dies ist keine Frage!</example>
         </rule>
 
-        <rule id="PRAETERITUM" name="Leichte Sprache: Perfekt vs. Präteritum">
+<!--        <rule id="PRAETERITUM" name="Leichte Sprache: Perfekt vs. Präteritum">
             <pattern>
                 <token postag='VER:.*PRT.*' postag_regexp='yes'/>
             </pattern>
@@ -52,7 +52,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
             <short>Präteritum vermeiden.</short>
             <example correction="">Ich <marker>ging</marker> einkaufen.</example>
             <example>Ich bin einkaufen gegangen.</example>
-        </rule>
+        </rule>-->
 
         <rule id="METAPHERN" name="Leichte Sprache: Metaphern">
             <pattern>
