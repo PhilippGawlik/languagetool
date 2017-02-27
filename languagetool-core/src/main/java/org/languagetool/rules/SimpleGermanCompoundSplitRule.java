@@ -44,9 +44,14 @@ public class SimpleGermanCompoundSplitRule extends Rule {
         return diff;
     }
 
+    // Capitalize first letter of a string
+    private String capitalize_first_letter(String word) {
+        return word.substring(0, 1).toUpperCase() + word.substring(1);
+    }
+
     // The stems in list parts don't contain affix information of the token any more
     // To make sure affix information isn't lost while generating the suggested correction
-    // string with merged stems is generated stem by stem and if at some point it is no prefix
+    // string with merged stems is generated stem by stem and if at some point there is no prefix
     // of the token string the missing part is added to the generated suggestion.
     private String generateSuggestedCorrection(AnalyzedTokenReadings token, List<String> parts) {
         // Add first stem to suggested correction
@@ -61,12 +66,12 @@ public class SimpleGermanCompoundSplitRule extends Rule {
             mergeStems += stem;
             // If mergeStems is prefix of token concatenate stem to suggested correction by using a hyphen
             if (token.getToken().startsWith(mergeStems)) {
-                sugCorrect += "-" + stem;
+                sugCorrect += "-" + capitalize_first_letter(stem);
             }
             // Else find the missing linking (affix) element and add it to suggestion
             else {
                 String linkElem = getLinkElement(token.getToken(), mergeStems);
-                sugCorrect += linkElem + "-" + stem;
+                sugCorrect += linkElem + "-" + capitalize_first_letter(stem);
             }
         }
         return sugCorrect;
