@@ -38,29 +38,29 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
 
         <rule id="FRAGEN" name="Leichte Sprache: Fragen">
             <regexp>.*\?.*</regexp>
-            <message>Vermeiden Sie Fragen - vor allem rhetorische. Schreiben Sie immer, was Sie meinen.</message>
+            <message>Wenn möglich, keine Fragen benutzen.</message>
             <short>Fragen vermeiden.</short>
             <example correction=""><marker>Ist dies eine Frage?</marker></example>
             <example>Dies ist keine Frage!</example>
         </rule>
 
-<!--        <rule id="PRAETERITUM" name="Leichte Sprache: Perfekt vs. Präteritum">
+        <rule id="PRAETERITUM" name="Leichte Sprache: Perfekt vs. Präteritum">
             <pattern>
                 <token postag='VER:.*PRT.*' postag_regexp='yes'/>
             </pattern>
-            <message>Vermeiden Sie Präteritum (1. Vergangenheitsform), nutzen Sie stattdessen Perfekt (2. Vergangenheitsform).</message>
-            <short>Präteritum vermeiden.</short>
+            <message>Vermeiden Sie die 1. Vergangenheit (Präteritum). Schreiben Sie in der 2. Vergangenheit. Verwenden Sie das Perfekt.</message>
+            <short>1. Vergangenheit vermeiden</short>
             <example correction="">Ich <marker>ging</marker> einkaufen.</example>
             <example>Ich bin einkaufen gegangen.</example>
-        </rule>-->
+        </rule>
 
         <rule id="METAPHERN" name="Leichte Sprache: Metaphern">
             <pattern>
                  <token inflected='yes' regexp='yes'>Bärendienst|Kurschatten|Mauerblümchen|Erdbeermund|Gänsehaut|Pustekuchen|Gardinenpredigt|Orangenhaut|Gipfeltreffen|Rabeneltern|Stimmungskanone|Hausdrache|Gaumenschmeichler|Glückspilz|Baumkrone|Sternstunde|Warteschlange|Menschenschlange|Strohfeuer|Wüstenschiff|Zahlenfriedhof|Kaderschmiede|Zwickmühle|Augenweide|Augenschmaus|Hexenkessel|Hosenstall|Stubentiger|Couchsurfer|Lampenfieber|Rohrkrepierer|Hanswurst|Goldmarie|Sternstunden|Helikoptereltern|Schwarzmalerei|Augenwischerei|Eselsbrücke|Kredithai</token>
             </pattern>
-            <message>Vermeiden Sie Metaphern und bildhafte Sprache.</message>
+            <message>Verwenden Sie keine schwierigen Begriffe. Vermeiden Sie Metaphern und bildhafte Sprache.</message>
             <short>Metaphern vermeiden</short>
-            <example>Sie haben ihm damit geholfen.</example>
+            <example>Sie haben ihm damit geschadet.</example>
             <example correction="">Sie erwiesen ihm einen <marker>Bärendienst</marker>.</example>
             <example correction="">Dafür gibt es keine <marker>Eselsbrücken</marker>.</example>
         </rule>
@@ -69,7 +69,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
             <pattern>
                 <token regexp='yes'>.*[¹²³]</token>
             </pattern>
-            <message>Vermeiden Sie Fußnoten. Erklären Sie alles im Text.</message>
+            <message>Benutzen Sie keine Fußnoten. Erklären Sie alles gleich im Text.</message>
             <short>Fußnoten vermeiden.</short>
             <example correction=""><marker>Hallo¹</marker></example>
             <example>Hallo, hier steht mehr</example>
@@ -81,40 +81,27 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                 <token/>
                 <token/>
             </pattern>
-            <message>Vermeiden Sie Verneinungen. Benutzen Sie positive Sprache.</message>
+            <message>Wenn möglich, keine Verneinungen benutzen.</message>
             <short>Verneinungen vermeiden.</short>
             <example correction="">Peter will <marker>nicht länger bleiben</marker>.</example>
             <example>Peter will gehen.</example>
         </rule>
 
-        <!--Mark adjectives that are included in list as rule violation -->
-        <rule id="NEGATION_PREFIX_UN" name="Negation Präfix un-">
+        <rule id="NEGATION_PRFIX_UN" name="Negation Präfix un-">
             <pattern case_sensitive='no'>
-                <token regexp='yes' postag_regexp="yes" postag='ADJ:.*'>[u|U]n(abhängig|absehbar|absetzbar|absichtlich|abwendbar|achtsam|akzeptabel|anfechtbar|angebracht|angefochten|angekündigt|angemeldet|angemessen|angenehm|angepasst|angestrengt|angetastet|annehmbar|ansehnlich|anständig|anstössig|anzweifelbar|appetitlich|artig|artikuliert|attraktiv|aufdringlich|auffällig|aufgefordert|aufgeklärt|aufgeregt|aufgeräumt|aufmerksam|aufrichtig|ausführbar|ausgebildet|ausgefüllt|ausgeglichen|ausgegoren|ausgeschlafen|ausgesetzt|ausgesprochen|autorisiert|autoritär|barmherzig|beabsichtigt|beachtet|beachtlich|beanstandet|beantwortet|bearbeitet|bebaut|bedacht|bedachtsam|bedeckt|bedenklich|bedeutend|bedingt|bedruckt|beeindruckt|beeinflussbar|beendet|befahrbar|befahren|befangen|befleckt|befriedigend|befriedigt|befristet|befruchtet|befugt|begabt|begehbar|beglaubigt|beglichen|begrenzt|begründbar|begründet|behaart|behandelbar|behandelt|behauen|behelligt|beherrschbar|beherrscht|behilflich|behindert|beholfen|bekannt|bekleidet|bekümmert|belastet|belebt|beleckt|belehrbar|beleuchtet|belichtet|beliebt|bemannt|bemerkt|bemittelt|benutzbar|benutzt|beobachtet|bequem|berechtigt|berufen|berücksichtigt|berührbar|berührt|beschalt|bescheiden|beschrankt|beschrieben|beschränkt|beschwert|beschädigt|beschäftigt|beschützt|beseelt|besetzt|besiegt|besonnen|besorgt|bespannt|bespielbar|bespielt|bestechlich|bestimmbar|bestimmt|bestritten|beständig|bestätigt|beteiligt|betont|betreten|beträchtlich|bewacht|bewaffnet|beweglich|bewegt|bewehrt|beweisbar|bewiesen|bewohnbar|bewohnt|bewusst|bewältigt|bezahlt|bezwingbar|bezähmbar|billig|blutig|brauchbar|brennbar|brüderlich|bunt|bussfertig|bürgerlich|bürokratisch|charakteristisch|christlich|dankbar|datiert|definierbar|definiert|deklinierbar|demokratisch|denkbar|deutbar|deutlich|deutsch|dialektisch|dicht|differenziert|diplomatisch|diskutabel|diszipliniert|dogmatisch|dramatisch|duldsam|durchführbar|durchlässig|durchschaubar|durchsichtig|eben|ebenbürtig|echt|edel|effektiv|egal|ehelich|ehrenhaft|ehrerbietig|ehrlich|eigennützig|eigentlich|einbringlich|eingeladen|eingeschränkt|eingestanden|eingeweiht|einig|eins|einsichtig|eitel|elastisch|elegant|emanzipiert|empfindlich|empfänglich|endlich|entbehrlich|entdeckt|entschieden|entschlossen|entschuldbar|entschuldigt|entwirrbar|erfahren|erforscht|erfreulich|erfüllbar|erfüllt|ergiebig|erheblich|erkannt|erkennbar|erklärbar|erlaubt|erledigt|ernst|erotisch|erprobt|erreichbar|erreicht|erschlossen|erschrocken|erschwinglich|ersetzbar|erträglich|erwartet|erwidert|erwähnt|erwünscht|erziehbar|erzogen|fachmännisch|fair|fassbar|feierlich|fein|fertig|fest|flektiert|flexibel|flott|folgsam|frankiert|fraulich|frei|freiwillig|freundlich|friedlich|frisiert|froh|fromm|fruchtbar|fundiert|fähig|förmlich|galant|gangbar|gar|gastlich|geahndet|geahnt|gebeten|gebeugt|gebildet|gebleicht|geboren|gebrannt|gebraucht|gebremst|gebrochen|gebräuchlich|gebunden|gebührend|gedeckt|gedient|gedruckt|geduldig|geeignet|gefahren|gefestigt|gefiltert|geflügelt|geformt|gefragt|gefrühstückt|gefährdet|gefährlich|gefällig|gefärbt|gefügig|gegessen|gegliedert|geheissen|geheizt|gehemmt|geheuer|gehindert|gehorsam|gehörig|gehört|geil|geistig|geklärt|gekocht|gekrönt|gekämmt|gekündigt|gekünstelt|gekürzt|geladen|gelebt|gelegen|gelehrig|gelehrt|gelenk|gelenkig|gelernt|gelesen|geliebt|gelogen|gelöscht|gelöst|gelüftet|gemacht|gemein|gemessen|gemindert|gemischt|gemäss|gemütlich|genannt|genau|genehmigt|geniert|geniessbar|genutzt|genügend|genützt|geordnet|gepaart|gepflegt|geplant|geprüft|geraten|gerechnet|gerecht|gerechtfertigt|geregelt|gereimt|gerufen|gerupft|gerächt|gerührt|gesagt|gesalzen|gesattelt|geschehen|gescheut|geschichtlich|geschickt|geschlagen|geschliffen|geschmeidig|geschminkt|geschmälert|geschoren|geschrieben|geschult|geschwächt|geschält|geschönt|geschützt|gesehen|gesellig|gesetzlich|gesetzt|gesichert|gesittet|gespitzt|gespritzt|gestalt|gestaltet|gestempelt|gestillt|gestraft|gestört|gesund|gesättigt|gesäuert|gesäumt|gesühnt|gesüsst|getan|getauft|geteilt|getragen|getreu|getrübt|gewandt|gewaschen|gewiss|gewohnt|gewollt|gewöhnlich|gewürzt|gezeichnet|gezielt|geziemend|gezuckert|gezwungen|gezählt|gezähmt|gezügelt|geändert|geöffnet|geübt|giftig|glaubhaft|glaubwürdig|gleich|gleichartig|gleichförmig|gleichmässig|gleichzeitig|glimpflich|gläubig|glücklich|gnädig|grade|grammatisch|graziös|greifbar|gut|gültig|günstig|haltbar|haltig|handlich|harmonisch|heilbar|heilig|heimlich|hinterfragt|historisch|hygienisch|höflich|hörbar|hübsch|identifiziert|informiert|intelligent|interessant|interessiert|irdisch|kalkulierbar|kameradschaftlich|kenntlich|keusch|kindlich|kirchlich|klar|kleidsam|klug|kollegial|komfortabel|kompetent|kompliziert|kontrollierbar|kontrolliert|konventionell|konzentriert|koordiniert|korrekt|kriegerisch|kritisch|kultiviert|kundig|körperlich|kündbar|künstlerisch|lackiert|lang|lauter|lebendig|leidig|lesbar|leserlich|lieb|liebenswürdig|limitiert|liniert|liniiert|literarisch|logisch|lösbar|löslich|manierlich|massgeblich|melodisch|menschlich|merklich|messbar|methodisch|militärisch|missverständlich|mittelbar|modern|modisch|moralisch|motiviert|musikalisch|musisch|männlich|möbliert|möglich|mündig|nachgiebig|nachsichtig|natürlich|normal|nötig|ordentlich|organisch|organisiert|orthodox|orthographisch|parteiisch|passend|passierbar|pathetisch|persönlich|pfändbar|plaziert|poetisch|poliert|politisch|populär|praktisch|problematisch|produktiv|professionell|programmgemäss|proportioniert|präzis|pädagogisch|pünktlich|qualifiziert|rasiert|rationell|ratsam|real|realistisch|recht|rechtmässig|redigiert|redlich|reell|reflektiert|regelmässig|reif|rein|reinlich|rentabel|rettbar|richtig|ritterlich|romantisch|rund|rühmlich|sachgemäss|sachlich|sanft|sauber|scharf|scheinbar|schicklich|schlagbar|schlüssig|schmelzbar|schwer|schädlich|schätzbar|schön|schöpferisch|selbständig|selig|sensibel|sentimental|seriös|sicher|sichtbar|silbisch|sinnig|sittlich|soldatisch|solid|solidarisch|sorgfältig|sozial|spektakulär|spezifisch|spielbar|sportlich|stabil|standesgemäss|statthaft|sterblich|stetig|stimmig|stofflich|strittig|strukturiert|sträflich|anständig|symmetrisch|sympathisch|systematisch|talentiert|tauglich|teilbar|teilhaft|tief|tilgbar|tot|tragbar|trainiert|trennbar|treu|tunlich|typisch|tätig|tüchtig|umgänglich|umkehrbar|umstritten|unterbrochen|unterscheidbar|verantwortbar|verantwortlich|verarbeitet|verbindlich|verbraucht|verbürgt|verdaulich|verdaut|verdient|verdorben|verdrossen|verdächtig|verdünnt|verehelicht|vereinbar|verfälscht|verfänglich|vergessen|vergleichbar|vergoren|vergällt|vergänglich|verheiratet|verhältnismässig|verhüllt|verkabelt|verklemmt|verkrampft|verkäuflich|verlangt|verletzbar|verletzlich|verletzt|verlässlich|vermeidbar|vermeidlich|vermerkt|vermindert|vermischt|vermittelbar|vermittelt|vermutet|vermählt|vermögend|vernünftig|verpackt|verputzt|verrichtet|verrückt|verschleiert|verschliessbar|verschlossen|verschlüsselt|verschuldet|verschämt|versehrt|verseucht|versorgt|verstanden|verstellt|versteuert|verständig|verständlich|versucht|versöhnbar|vertraut|vertretbar|verträglich|verwandt|verwechselbar|verwehrt|verwertbar|verwundet|verzagt|verzeihlich|verzichtbar|verzinslich|verzollt|veränderbar|veränderlich|verändert|veröffentlicht|vollendet|vollkommen|vollständig|vorbereitet|voreingenommen|vorhergesehen|vorhersehbar|vorschriftsmässig|vorsichtig|vorstellbar|vorteilhaft|wahr|wahrhaftig|wahrscheinlich|wandelbar|weiblich|weise|weit|wert|wesentlich|wichtig|widerlegbar|widerruflich|widersprochen|wiederholbar|willig|willkommen|willkürlich|wirklich|wirksam|wirtlich|wirtschaftlich|wissend|wissenschaftlich|wissentlich|wohnlich|würdig|zart|zeitgemäss|zeitig|zensiert|zerbrechlich|zerkaut|zerstörbar|zerstört|ziemlich|zivilisiert|zufrieden|zugänglich|zulänglich|zulässig|zumutbar|zurechnungsfähig|zureichend|zusammenhängend|zuständig|zutreffend|zuträglich|zuverlässig|zweckmässig|zweideutig|zweifelhaft|zählbar|zähmbar|ähnlich|ästhetisch|ökonomisch|übel|überbietbar|überlegt|überprüfbar|überschaubar|übersetzbar|übersichtlich|übertragbar|übertroffen|überwindbar|überwindlich|üblich)[A-Za-zöÖäÄüÜß]*</token>
+                <token regexp='yes' postag='ADJ:PRD:GRU'>un(?!ter)[A-Za-zöÖäÄüÜß]*</token>
             </pattern>
-            <message>Vermeiden Sie das Negationsprefix 'un-'. Verwenden Sie stattdessen positive Wortformen.</message>
+            <message>Sie nutzen das Negationsprefix 'un-'. Bitte verwenden Sie die positive Wort-form (z.B. <suggestion>hässlich</suggestion> statt unschön).</message>
             <short>Postive Wortform verwenden.</short>
-            <example>Das ist aber <marker>hässlich</marker>!</example>
-            <example correction="">Das ist aber <marker>unschön</marker>!</example>
+            <example type="correct">Das ist aber <marker>hässlich</marker>!</example>
+            <example type="incorrect" correction="hässlich">Das ist aber <marker>unschön</marker>!</example>
         </rule>
-
-        <!--Allow list of non-productiv adjectives with 'un-' and mark all other as rule violation -->
-<!--        <rule id="NEGATION_PREFIX_UN" name="Negation Präfix un-">
-            <pattern case_sensitive='yes'>
-                <token regexp='yes' postag_regexp="yes" postag='ADJ:.*'>[u|U]n(?!(ar.*|bedarft.*|cinat.*|cus|d|dulat.*|entwegt.*|fall.*|garn|garisch.*|gefähr.*|glaub.*|gue|guiculata|gulatus|iVers.*|icus|iert.*|ifacial.*|ifarben.*|ifazial.*|ification|iflora.*|iform.*|ifktionell.*|ijournal.*|ilateral.*|ion.*|ipolar.*|isono.*|itaris.*ch|itegmisch.*|itis|ivalv.*|ivariat.*|iversal.*|iversaux|iversel.*|ivers.*|iwerbg|ixoid.*e|ser|sere|seres|sereins|serem|seren|serer|sern|sererseits|serm|sers|sre|srer|ten|ten.*|ter.*|torn|är.*|abänder.*|abkömm.*|abding.*|aussprechbar.*|bedarft.*|beeinflusst.*|begreiflich.*|behaust.*|beirrt.*|benützbar.*|benützt.*|bescholt.*|beseh.*|bestrumpft.*|beugbar.*|beweibt.*|botmässig.*|eidlich.*|einholbar.*|entwegt.*|erbeten.*|erhört.*|ergründbar.*|erspriesslich.*|fehlbar.*|förmig.*|gehalt.*|gehobelt.*|geschlechtlich.*|gezogen.*|glaublich.*|hold.*|merkbar.*|parteilich.*|prätentiös.*|regierbar.*|stet.*|streitig.*|tadelhaft.*|teilhaftig.*|umschränkt.*|umwunden.*|verblümt.*|verfroren.*|verhofft.*|verhohlen.*|veräusserlich.*|wegsam.*|wirsch.*|wägbar.*|ziemend.*))[A-Za-zöÖäÄüÜß]*</token>
-            </pattern>
-            <message>Vermeiden Sie das Negationsprefix 'un-'. Verwenden Sie stattdessen positive Wortformen.</message>
-            <short>Postive Wortform verwenden.</short>
-            <example>Das ist aber <marker>hässlich</marker>!</example>
-            <example correction="">Das ist aber <marker>unschön</marker>!</example>
-        </rule>-->
 
         <rule id="LANGES_WORT" name="Leichte Sprache: Langes Wort">
             <pattern>
                 <token regexp="yes">\p{L}{14,}</token>
             </pattern>
             <message>Dieses Wort hat mehr als dreizehn Buchstaben. Benutzen Sie kurze Wörter.</message>
-            <short>Lange Wörter vermeiden.</short>
             <example>Die Schifffahrt auf der Donau ist beliebt.</example>
             <example correction="">Die <marker>Donaudampfschifffahrt</marker> ist beliebt.</example>
         </rule>
@@ -122,35 +109,35 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
         <rulegroup id="ABKUERZUNG" name="Leichte Sprache: Abkürzung">
             <rule>
                 <pattern>
-                    <token inflected='yes' regexp='yes'>Abb|Abf|Abh|Abk|abl|Abs|abschl|Abschl|Abschn|Abt|abw|abzügl|Adj|agr|al|allg|amerikan|amtl|Amtsbez|Anh|anim|anl|Anl|Anm|Antw|Apr|Art|Auff|Aufl|Aug|Ausf|ausl|Bd|bearb|beil|Beil|Bek|Bem|bes|best|betr|Betriebsw|bez|Bez|Bhf|biol|bish|Bk|Bln|bspw|Buchst|bw|bzw|ca|can|chines|cult|cur|Dat|DDr|dent|Dez|Di|Do|Dpl|Dr|Dres|DrPH|Drs|dt|Dt|ebd|ehem|eigtl|Einf|Eing|Einl|einschl|eng|Entsch|entspr|Erg|etc|Etg|Eur|ev|evtl|Fa|Fam|Feb|Febr|ff|fortl|Forts|Fr|franz|frz|gdw|geb|gegr|gem|gen|gepfl|ges|gesch|gesetzl|gez|ggf|ggl|grds|griech|habil|Hbf|Hbhf|hom|hort|Hr|Hrsg|hum|inkl|insb|insbes|int|internat|iur|Jahrh|Jan|Jh|Jhd|Jhr|jr|Jul|Jun|Kap|kath|Kdm|Kennz|Komm|kompl|Kr|Krh|krit|Kto|künstl|Kz|Landkr|lat|led|lfd|Lfg|lic|Lit|lt|Mag|Mär|math|Math|mdl|med|medic|merc|mglw|Mi|Min|Mio|mittelalterl|Mo|möbl|möglicherw|mont|Mrd|mtl|mult|mündl|mus|nat|nat|No|norw|Nov|Nr|od|oec|oec|Okt|österr|paed|pharm|phil|physiol|Pkt|pol|poln|Prof|publ|Ref|rer|russ|Sa|sc|schriftl|schwed|schweizer|scil|sec|Sek|Sep|Sept|sic|silv|Slg|So|soc|sog|sogen|Sportwiss|Std|Str|tägl|tech|techn|teilw|theol|Tit|tlw|troph|türk|umstr|unbest|unveröff|unveröffentl|urspr|ursprüngl|usf|usw|Verf|veröffentl|Verw|Verww|vet|vgl|Vis|vllt|vollst|voraussichtl|vorl|vorm|vs|vsl|Wdh|wg|whd|Whg|wiss|wöchentl|Ziff|zit|zsm|zul|zus|zust|zutr|zzgl</token>
+                    <token inflected='yes' regexp='yes'>Abb|Abf|Abh|Abk|abl|Abs|abschl|Abschl|Abschn|Abt|abw|abzügl|Adj|agr|al|allg|amerikan|amtl|Amtsbez|Anh|anim|anl|Anl|Anm|Antw|Apr|Art|Auff|Aufl|Aug|Ausf|ausl|Bd|bearb|beil|Beil|Bek|Bem|bes|best|betr|Betriebsw|bez|Bez|Bhf|biol|bish|Bk|Bln|bspw|Buchst|bw|bzw|ca|can|chines|cult|cur|Dat|DDr|dent|Dez|Di|Do|Dpl|Dr|Dr|Dres|DrPH|Drs|dt|Dt|ebd|ehem|eigtl|Einf|Eing|Einl|einschl|eng|Entsch|entspr|Erg|etc|Etg|Eur|ev|evtl|Fa|Fam|Feb|Febr|ff|fortl|Forts|Fr|franz|frz|gdw|geb|gegr|gem|gen|gepfl|ges|gesch|gesetzl|gez|ggf|ggl|grds|griech|habil|Hbf|Hbhf|hom|hort|Hr|Hrsg|hum|inkl|insb|insbes|int|internat|iur|Jahrh|Jan|Jh|Jhd|Jhr|jr|Jul|Jun|Kap|kath|Kdm|Kennz|Komm|kompl|Kr|Krh|krit|Kto|künstl|Kz|Landkr|lat|led|lfd|Lfg|lic|Lit|lt|Mag|Mär|math|Math|mdl|med|medic|merc|mglw|Mi|Min|Mio|mittelalterl|Mo|möbl|möglicherw|mont|Mrd|mtl|mult|mündl|mus|nat|nat|No|norw|Nov|Nr|od|oec|oec|Okt|österr|paed|pharm|phil|physiol|Pkt|pol|poln|Prof|publ|Ref|rer|russ|Sa|sc|schriftl|schwed|schweizer|scil|sec|Sek|Sep|Sept|sic|silv|Slg|So|soc|sog|sogen|Sportwiss|Std|Str|tägl|tech|techn|teilw|theol|Tit|tlw|troph|türk|umstr|unbest|unveröff|unveröffentl|urspr|ursprüngl|usf|usw|Verf|veröffentl|Verw|Verww|vet|vgl|Vis|vllt|vollst|voraussichtl|vorl|vorm|vs|vsl|Wdh|wg|whd|Whg|wiss|wöchentl|Ziff|zit|zsm|zul|zus|zust|zutr|zzgl</token>
                     <token>.</token>
                 </pattern>
-                <message>Verzichten Sie auf Abkürzungen. Ausnahmen, die jeder kennt, z.B. WC, Dr., LKW.</message>
-                <short>Abkürzungen vermeiden.</short>
+                <message>Abkürzung gefunden. Verzichten Sie auf Abkürzungen.</message>
                 <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
             </rule>
-<!--            <rule>
+            <rule>
                 <pattern>
                     <token regexp="yes">\p{Lu}{2,}</token>
                 </pattern>
-                <message>Verzichten Sie auf Abkürzungen. Ausnahmen, die jeder kennt, z.B. WC, Dr., LKW.</message>
-                <short>Abkürzungen vermeiden.</short>
+                <message>Abkürzung gefunden. Verzichten Sie auf Abkürzungen.</message>
                 <example>Das <marker>Köchelverzeichnis</marker> ist ein Verzeichnis der Kompositionen von Mozart.</example>
                 <example correction="">Das <marker>KV</marker> ist ein Verzeichnis der Kompositionen von Mozart.</example>
-            </rule>-->
+            </rule>
             <rule>
-                <regexp>\p{Lu}\.(\p{Lu}\.)*</regexp>
-                <message>Verzichten Sie auf Abkürzungen. Ausnahmen, die jeder kennt, z.B. WC, Dr., LKW.</message>
-                <short>Abkürzungen vermeiden.</short>
+                <pattern>
+                    <token regexp="yes">\p{L}</token><token>.</token>
+                    <token regexp="yes">\p{L}</token><token>.</token>
+                    <token regexp="yes">\p{L}</token><token>.</token>
+                </pattern>
+                <message>Abkürzung gefunden. Verzichten Sie auf Abkürzungen.</message>
                 <example>Die Sozialdemokratische Partei Deutschlands.</example>
-                <example correction="">Die <marker>S.P.D.</marker>.</example>
+                <example correction="">Die <marker>S.P.D.</marker></example>
             </rule>
             <rule>
                 <pattern>
                     <token postag_regexp="yes" postag="ABK:.*"><exception regexp="yes">\p{L}</exception></token>
                 </pattern>
-                <message>Verzichten Sie auf Abkürzungen. Ausnahmen, die jeder kennt, z.B. WC, Dr., LKW.</message>
-                <short>Abkürzungen vermeiden.</short>
+                <message>Abkürzung gefunden. Verzichten Sie auf Abkürzungen.</message>
                 <example>Wir brauchen Milch, Eier <marker>und so weiter</marker>.</example>
                 <example correction="">Wir brauchen Milch, Eier <marker>usw</marker>.</example>
             </rule>
@@ -162,8 +149,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                     <token inflected="yes" postag_regexp="yes" postag="VER:AUX:.*" skip="-1">werden</token>
                     <token postag_regexp="yes" postag="PA2:PRD:.*|VER:PA2:.*"/>
                 </pattern>
-                <message>Vermeiden sie passive Formulierungen. Verwenden Sie aktive Wörter.</message>
-                <short>Passiv vermeiden.</short>
+                <message>In diesem Satz haben Sie das Passiv verwendet. Benutzen Sie aktive Wörter.</message>
                 <example>Jemand feuerte den Manager.</example>
                 <example correction="">Der Manager <marker>wurde gefeuert</marker>.</example>
             </rule>
@@ -172,8 +158,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                     <token postag_regexp="yes" postag="PA2:PRD:.*|VER:PA2:.*"/>
                     <token inflected="yes" postag_regexp="yes" postag="VER:AUX.*"><exception>,</exception>werden</token>
                 </pattern>
-                <message>Vermeiden sie passive Formulierungen. Verwenden Sie aktive Wörter.</message>
-                <short>Passiv vermeiden.</short>
+                <message>In diesem Satz haben Sie das Passiv verwendet. Benutzen Sie aktive Wörter.</message>
                 <example>Sie feuerten den Manager.</example>
                 <example correction="">Als der Manager <marker>gefeuert wurde</marker>.</example>
             </rule>
@@ -184,7 +169,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                     <token negate="yes" postag="KON:NEB"/>
                     <token inflected="yes" postag_regexp="yes" postag="VER:AUX:.*"><exception>,</exception>werden</token>
                 </pattern>
-                <message>Vermeiden sie passive Formulierungen. Verwenden Sie aktive Wörter.</message>
+                <message>In diesem Satz haben Sie das Passiv verwendet. Benutzen Sie aktive Wörter.</message>
                 <example>Sie mahnten den Manager ab und feuerten ihn.</example>
                 <example type="incorrect">Als der Manager <marker>abgemahnt und gefeuert wurde</marker>.</example>
             </rule>
@@ -200,8 +185,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                         <token postag_regexp="yes" postag="SUB:GEN:.*"/>
                     </marker>
                 </pattern>
-                <message>Vermeiden Sie Formulierungen im Genitiv.</message>
-                <short>Genitiv vermeiden.</short>
+                <message>Genitiv gefunden. Vermeiden Sie den Genitiv.</message>
                 <example>Der Sattel von dem Fahrrad.</example>
                 <example correction="">Der Sattel <marker>des Fahrrads</marker>.</example>
             </rule>
@@ -213,8 +197,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                         <token postag_regexp="yes" postag="SUB:GEN:.*"/>
                     </marker>
                 </pattern>
-                <message>Vermeiden Sie Formulierungen im Genitiv.</message>
-                <short>Genitiv vermeiden.</short>
+                <message>Genitiv gefunden. Vermeiden Sie den Genitiv.</message>
                 <example>Der Sattel von deinem Fahrrad.</example>
                 <example correction="">Der Sattel <marker>deines Fahrrads</marker>.</example>
                 <!-- Vorschlag: Verwenden Sie statt dessen den Dativ. -->
@@ -228,7 +211,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                     </marker>
                     <token postag_regexp="yes" postag="SUB:.*"/>
                 </pattern>
-                <message>Vermeiden Sie Formulierungen im Genitiv.</message>
+                <message>Genitiv gefunden. Vermeiden Sie den Genitiv.</message>
                 <example>Von dem Fahrrad der Sattel ist nass.</example>
                 <example correction=""><marker>Deines Fahrrads</marker> Sattel ist nass.</example>
             </rule>
@@ -240,7 +223,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                     </marker>
                     <token postag_regexp="yes" postag="SUB:.*"/>
                 </pattern>
-                <message>Vermeiden Sie Formulierungen im Genitiv.</message>
+                <message>Genitiv gefunden. Vermeiden Sie den Genitiv.</message>
                 <example>Von deinem Fahrrad der Sattel ist nass.</example>
                 <example correction=""><marker>Des Fahrrads</marker> Sattel ist nass.</example>
             </rule>
@@ -251,8 +234,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                     <token postag='ART:(DEF|IND):GEN:.*' postag_regexp='yes' skip='-1'/>
                     <token postag='SUB:GEN:.*' postag_regexp='yes'/>
                 </pattern>
-                <message>Vermeiden Sie Formulierungen im Genitiv.</message>
-                <short>Genitiv vermeiden.</short>
+                <message>Genitiv gefunden. Vermeiden Sie den Genitiv.</message>
                 <example>Wegen dem Sattel.</example>
                 <example correction=''><marker>Wegen des Sattels</marker>.</example>
             </rule>
@@ -262,8 +244,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                     <token postag='PRO:POS:GEN:.*' postag_regexp='yes' skip='-1'/>
                     <token postag='SUB:GEN:.*' postag_regexp='yes'/>
                 </pattern>
-                <message>Vermeiden Sie Formulierungen im Genitiv.</message>
-                <short>Genitiv vermeiden.</short>
+                <message>Genitiv gefunden. Vermeiden Sie den Genitiv.</message>
                 <example>Wegen deinem Sattel.</example>
                 <example correction=''><marker>Wegen deines Sattels</marker>.</example>
             </rule>
@@ -276,8 +257,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                     <token>,</token>
                     <token negate_pos="yes" postag_regexp="yes" postag="VER:.*"/>
                 </pattern>
-                <message>Vermeiden Sie die indirekte Rede.</message>
-                <short>Indirekte Rede vermeiden.</short>
+                <message>Indirekte Rede gefunden. Benutzen Sie direkte Rede.</message>
                 <example>Er sagte: ich bin 30 Jahre alt.</example>
                 <example correction="">Er <marker>sagte, er</marker> sei 30 Jahre alt.</example>
             </rule>
@@ -293,8 +273,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                         <exception postag_regexp="yes" postag="VER:2:PLU:KJ1:.*"/>
                     </token>
                 </pattern>
-                <message>Vermeiden Sie den Konjunktiv.</message>
-                <short>Konjunktiv vermeiden.</short>
+                <message>Konjunktiv gefunden. Vermeiden Sie den Konjunktiv.</message>
                 <example>Angeblich sind sie bereit.</example>
                 <example correction="">Man <marker>sei</marker> bereit.</example>
             </rule>
@@ -303,8 +282,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                 <pattern>
                     <token regexp='yes'>bräuchte|brächte|wüsste|käme|ginge|schliefe|bliebe|sähe|gäbe|läge|ließe|wäre|hätte|würde|müsste|dürfte|könnte|sollte|wollte</token>
                 </pattern>
-                <message>Vermeiden Sie den Konjunktiv.</message>
-                <short>Konjunktiv vermeiden.</short>
+                <message>Konjunktiv gefunden. Vermeiden Sie den Konjunktiv.</message>
                 <example>Auf wiedersehen.</example>
                 <example correction="">Ich <marker>würde</marker> mich nun verabschieden.</example>
             </rule>
@@ -312,10 +290,9 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
 
         <rule id="ROEMISCHE_ZAHL" name="Leichte Sprache: Römischen Zahl">
             <pattern>
-                <token regexp="yes">(M{0,4}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3}))<exception>cm</exception></token>
+                <token regexp="yes">(M{0,4}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3}))|(m{0,4}(cm|cd|d?c{0,3})(xc|xl|l?x{0,3})(ix|iv|v?i{0,3}))<exception>cm</exception></token>
             </pattern>
-            <message>Vermeiden Sie römische Zahlen, nutzen Sie stattdessen arabische Zahlen.</message>
-            <short>Römische Zahlen vermeiden.</short>
+            <message>Römische Zahl gefunden. Benutzen Sie arabische Zahlen.</message>
             <example>Stufe 4</example>
             <example>Das ist 4 cm lang.</example>
             <example correction="">Stufe <marker>IV</marker></example>
@@ -327,8 +304,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                 <pattern>
                     <token spacebefore="yes" regexp="yes">\p{N}{5,}</token>
                 </pattern>
-                <message>Vermeiden Sie hohe Zahlen. Benutzen Sie Vergleiche oder ungenaue Angaben.</message>
-                <short>Hohe Zahl vermeiden.</short>
+                <message>Hohe Zahl gefunden. Vermeiden Sie hohe Zahlen.</message>
                 <example>Sehr viele Menschen</example>
                 <example correction="">Bis zu <marker>100000</marker> Menschen</example>
             </rule>
@@ -338,8 +314,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                     <token spacebefore="no">.</token>
                     <token spacebefore="no" regexp="yes">\p{N}{3}</token>
                 </pattern>
-                <message>Vermeiden Sie hohe Zahlen. Benutzen Sie Vergleiche oder ungenaue Angaben.</message>
-                <short>Hohe Zahl vermeiden.</short>
+                <message>Hohe Zahl gefunden. Vermeiden Sie hohe Zahlen.</message>
                 <example>Sehr viele Menschen</example>
                 <example correction=""><marker>100.000</marker> Menschen</example>
             </rule>
@@ -349,8 +324,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                     <token spacebefore="no">,</token>
                     <token spacebefore="no" regexp="yes">\p{N}+</token>
                 </pattern>
-                <message>Vermeiden Sie Kommazahlen. Benutzen Sie Vergleiche oder ungenaue Angaben.</message>
-                <short>Kommazahlen vermeiden.</short>
+                <message>Kommazahl gefunden. Vermeiden Sie Kommazahlen.</message>
                 <example>Etwa 4</example>
                 <example correction=""><marker>3,91</marker></example>
             </rule>
@@ -358,8 +332,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                 <pattern>
                     <token regexp="yes">\p{N}+%</token>
                 </pattern>
-                <message>Vermeiden Sie Prozentangaben. Benutzen Sie Vergleiche oder ungenaue Angaben.</message>
-                <short>Prozentangaben vermeiden.</short>
+                <message>Prozentzahl gefunden. Vermeiden Sie Prozentzahlen.</message>
                 <example>14 Prozent</example>
                 <example correction=""><marker>14%</marker></example>
             </rule>
@@ -368,8 +341,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                     <token regexp="yes">\p{N}+</token>
                     <token>%</token>
                 </pattern>
-                <message>Vermeiden Sie Prozentangaben. Benutzen Sie Vergleiche oder ungenaue Angaben.</message>
-                <short>Prozentangaben vermeiden.</short>
+                <message>Prozentzahl gefunden. Vermeiden Sie Prozentzahlen.</message>
                 <example>14 Prozent</example>
                 <example correction=""><marker>14 %</marker></example>
             </rule>
@@ -380,7 +352,6 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                 <token postag="ZAL"/>
             </pattern>
             <message>Zahlwort gefunden. Fragen Sie die Prüfer und Prüferinnen: Wie sollen Sie Zahlen schreiben? Meistens sind Ziffern leichter als Worte.</message>
-            <short>Korrekte Zahlnotation verwenden.</short>
             <example>Es waren 7 Leute da.</example>
             <example correction="">Es waren <marker>sieben</marker> Leute da.</example>
         </rule>
@@ -394,7 +365,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                     <token spacebefore="no">.</token>
                     <token spacebefore="no" regexp="yes">(19|20)?\p{N}{2}</token>
                 </pattern>
-                <message>Datumsangabe gefunden. Versuchen Sie, das Datum möglichst einfach darzustellen.</message>
+                <message>Datumsangabe gefunden. Fragen Sie die Prüfer und Prüferinnen: Wie sollen Sie ein Datum schreiben?</message>
                 <example>Am 31. Januar 2011 geht es los.</example>
                 <example correction="">Am <marker>31.01.2011</marker> geht es los.</example>
             </rule>
@@ -406,8 +377,8 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                     <token spacebefore="no">.</token>
                     <token spacebefore="no" regexp='yes'>(0|1)[0-8]\p{N}{2}</token>
                 </pattern>
-                <message>Vermeiden Sie alten Jahreszahlen. Umschreiben Sie Daten die vor dem 20. Jahrhundert liegen.</message>
-                <short>Alte Jahreszahlen vermeiden.</short>
+                <message>Bitte verwenden Sie keine alten Jahreszahlen. Umschreiben Sie Daten die vor dem 20. Jahrhundert liegen.</message>
+                <short>Alte Jahreszahl gefunden. Bitte umschreiben Sie die Zeitangabe.</short>
                 <example>Vor vielen Jahren.</example>
                 <example correction=''>Im Jahre <marker>12.12.1867</marker>.</example>
             </rule>
@@ -418,8 +389,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                     <token regexp="yes">(Januar|Februar|März|April|Mai|Juni|Juli|August|September|Oktober|November|Dezember)</token>
                     <token regexp='yes'>(19|20)?\p{N}{2}</token>
                 </pattern>
-                <message>Datum mit Monatsnamen gefunden. Versuchen Sie, das Datum möglichst einfach darzustellen.</message>
-                <short>Monatsnamen im Datum vermeiden.</short>
+                <message>Datum mit Monatsnamen gefunden. Fragen Sie die Prüfer und Prüferinnen: Wie sollen Sie ein Datum schreiben?</message>
                 <example>Am 31.1.2012 geht es los.</example>
                 <example correction="">Am <marker>31. Januar 2012</marker> geht es los.</example>
             </rule>
@@ -441,8 +411,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                     <token spacebefore="no">.</token>
                     <token regexp="yes">(Januar|Februar|März|April|Mai|Juni|Juli|August|September|Oktober|November|Dezember)</token>
                 </pattern>
-                <message>Datum mit Monatsnamen gefunden. Versuchen Sie, das Datum möglichst einfach darzustellen.</message>
-                <short>Monatsnamen im Datum vermeiden.</short>
+                <message>Datum mit Monatsnamen gefunden. Fragen Sie die Prüfer und Prüferinnen: Wie sollen Sie ein Datum schreiben?</message>
                 <example>Am 31.1. geht es los.</example>
                 <example correction="">Am <marker>31. Januar</marker> geht es los.</example>
             </rule>
@@ -453,8 +422,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                 <pattern>
                     <token regexp="yes">(&klamauf;|&klamzu;|&anfauf;|&anfzu;|&amp;|[*†§…;'"])</token>
                 </pattern>
-                <message>Vermeiden Sie Sonderzeichen wie % ; () $ ....</message>
-                <short>Sonderzeichen vermeiden.</short>
+                <message>Sonderzeichen gefunden. Vermeiden Sie Sonderzeichen.</message>
                 <example>Hier steht was, und noch was...</example>
                 <example correction="">Hier steht was <marker>(</marker>und noch was...</example>
             </rule>
@@ -462,8 +430,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                 <pattern>
                     <token>%<exception scope="previous" regexp="yes">\p{N}+</exception></token>
                 </pattern>
-                <message>Vermeiden Sie Sonderzeichen wie % ; () $ ....</message>
-                <short>Sonderzeichen vermeiden.</short>
+                <message>Sonderzeichen gefunden. Vermeiden Sie Sonderzeichen.</message>
                 <example>Erhöhung um einige Prozent</example>
                 <example correction="">Erhöhung um einige <marker>%</marker></example>
             </rule>
@@ -477,8 +444,8 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                     <token>)</token>
                     <token regexp='yes'>\p{N}{5,}+</token>
                 </pattern>
-                <message>Setzen Sie Telefonnummern mit Leerzeichen nach jeder zweiten Ziffer. Verzichten Sie auf Klammern oder Sonderzeichen.</message>
-                <short>Richtlinie für Telefonnummern beachten.</short>
+                <message>Bitte setzen Sie bei Telefonnummern ein Leerzeichen nach jeder zweiten Zahl und verwenden Sie wenn notwendig einen Bindestrich um Vorwahl und persönliche Nummer voneinander zu trennen.</message>
+                <short>Bitte halten Sie sich an die Richtlinie für Telefonnummer.</short>
                 <example correction=''><marker>(0201) 333121</marker></example>
                 <example>02 01 33 31 21</example>
             </rule>
@@ -488,15 +455,14 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                     <token>/</token>
                     <token regexp='yes'>\p{N}{5,}+</token>
                 </pattern>
-                <message>Setzen Sie Telefonnummern mit Leerzeichen nach jeder zweiten Ziffer. Verzichten Sie auf Klammern oder Sonderzeichen.</message>
-                <short>Richtlinie für Telefonnummern beachten.</short>
+                <message>Bitte setzen Sie bei Telefonnummern ein Leerzeichen nach jeder zweiten Zahl und verwenden Sie wenn notwendig einen Bindestrich um Vorwahl und persönliche Nummer voneinander zu trennen.</message>
+                <short>Bitte halten Sie sich an die Richtlinie für Telefonnummer.</short>
                 <example correction=''><marker>0201 / 333121</marker></example>
                 <example>02 01 - 33 31 21</example>
             </rule>
         </rulegroup>
 
-        <!--rule finds long sentences and markes the sentences to long tail     -->
-<!--        <rulegroup id="SATZ" name="Leichte Sprache: Satz">
+        <rulegroup id="SATZ" name="Leichte Sprache: Satz">
             <rule>
                 <pattern>
                     <token><exception scope="previous" regexp="yes">.*</exception></token>
@@ -517,41 +483,185 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                         <token postag="SENT_END"/>
                     </marker>
                 </pattern>
-                <message>Vermeiden Sie Sätze mit mehr als 12 Wörtern.</message>
-                <short>Lange Sätze vermeiden.</short>
+                <message>Langer Satz gefunden: Dieser Satz hat mehr als 12 Wörter.</message>
                 <example>Das hier ist ein kurzer Satz.</example>
                 <example correction="">Das hier ist kein kurzer Satz, sondern eher was längeres mal <marker>zum Testen.</marker></example>
             </rule>
-        </rulegroup>-->
+        </rulegroup>
 
-        <!--rule finds long sentences and markes the whole sentence     -->
-<!--        <rulegroup id="SATZ" name="Leichte Sprache: Satz">
+        <rulegroup name="Leichte Sprache: Schwierige Wörter" id="SCHWIERIGEWOERTER">
             <rule>
                 <pattern>
-                    <token><exception scope="previous" regexp="yes">.*</exception></token>
-                    <token regexp='yes' negate='yes'>,</token>
-                    <token regexp='yes' negate='yes'>,</token>
-                    <token regexp='yes' negate='yes'>,</token>
-                    <token regexp='yes' negate='yes'>,</token>
-                    <token regexp='yes' negate='yes'>,</token>
-                    <token regexp='yes' negate='yes'>,</token>
-                    <token regexp='yes' negate='yes'>,</token>
-                    <token regexp='yes' negate='yes'>,</token>
-                    <token regexp='yes' negate='yes'>,</token>
-                    <token regexp='yes' negate='yes'>,</token>
-                    <token regexp='yes' negate='yes'>,</token>
-                    <token regexp='yes' negate='yes'>,</token>
-                    <token skip="-1"/>
-                    <token postag="SENT_END"/>
+                    <token regexp="yes">Delegierte|gegebenenfalls|gehören|Gehör|gemäß|Geratewohl|Gratwanderung|Häkchen|hanebüchen|Hasardeur|hoffentlich|ihrerseits|Incentive|infolge|infolgedessen|Inkrafttreten|insbesondere|inwieweit|katastrophal|Katastrophe|Katzenhai|kennenlernen|Kenntnis|Kernspintomografie|kohärent|kolossal|Komitee|Kommilitone|Konkurrenz|Konsens|kopfüber|korrigieren|Koryphäe|krakeelen|Kumulation|kumulieren|Libyen|lizenzieren|Lizenz|mindeste|minimal|Mischpoche|Mischpoke|Misere|Mobiliar|nämlich|nämlich|nichtsdestotrotz|Obolus|obsolet|original|Paket|Paneel|Pappenstiel|parallel|peripher|persönlich|Pinnwand|Platzierung|platzieren|Portfolio|Portemonnaie|potenziell|präferieren|projizieren|prophylaktisch|Prozess|Pubertät|redundant|Reflexion|Renommee|renommiert|Reparatur|respektive|Ressource|Resümee|revanchieren|Revanche|Revision|reziprok|Rhetorik|Satellit|schloss|Schluss|Schlafittchen|Schloss|schnellstmöglich|selbstständig|separat|Seriosität|Silhouette|Siphon|Sisyphusarbeit|skurril|Smiley|sodass|sogenannt|Souterrain|soweit|sowie|Stakeholder|Standard|stattdessen|Stegreif|Stele|Strang|stringent|subsumieren|subtil|Symmetrie|sympathisch|Sympathie|Terabyte|Tipp|todlangweilig|todtraurig|tolerant|Toleranz|Trilogie|Triumph|triumphieren|übersät|übrigens|unendlich|unentgeltlich|unsympathisch|verhören|Verlies|vermeintlich|verpönt|Verwandtschaft|verwandtschaftlich|Verzeichnis|vielleicht|Voraussetzung|voraus|voraussichtlich|wahrnehmen|währenddessen|weismachen|widerstehen|widerfahren|widerlegen|Widerspruch|widerspiegeln|wiederum|ziemlich|zumindest|zurzeit|zuwider</token>
                 </pattern>
-                <message>Vermeiden Sie Sätze mit mehr als 12 Wörtern.</message>
-                <short>Lange Sätze vermeiden.</short>
-                <example>Das hier ist ein kurzer Satz.</example>
-                <example correction=""><marker>Das hier ist kein kurzer Satz, sondern eher was längeres mal zum Testen.</marker></example>
+                <message>Das Wort "<match no="1"/>" ist schwer verständlich. Wenn möglich, dann nutzen Sie eine Umschreibung.</message>
+                <short>Nutzen Sie eine Umschreibung</short>
+                <example correction=''>Sich <marker>Gehör</marker> verschaffen.</example>
+                <example>Dafür sorgen, dass die Menschen zuhören.</example>
             </rule>
-        </rulegroup>-->
-
-        <rulegroup name="Leichte Sprache: Schwierige Wörter" id="SCHWIERIGE_WOERTER_XML">
+            <rule>
+                <pattern>
+                    <token>im</token>
+                    <token>Einzelnen</token>
+                </pattern>
+                <message>Die Wortgruppe "<match no="1"/> <match no="2"/>" ist schwer verständlich. Wenn möglich, nutzen Sie eine Umschreibung.</message>
+                <short>Nutzen Sie eine Umschreibung.</short>
+                <example correction=''>Und <marker>im Einzelnen</marker> usw.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>im</token>
+                    <token>Folgenden</token>
+                </pattern>
+                <message>Die Wortgruppe "<match no="1"/> <match no="2"/>" ist schwer verständlich. Wenn möglich, nutzen Sie eine Umschreibung.</message>
+                <short>Nutzen Sie eine Umschreibung.</short>
+                <example correction=''>Und <marker>im Folgenden</marker> usw.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>im</token>
+                    <token>Voraus</token>
+                </pattern>
+                <message>Die Wortgruppe "<match no="1"/> <match no="2"/>" ist schwer verständlich. Wenn möglich, nutzen Sie eine Umschreibung.</message>
+                <short>Nutzen Sie eine Umschreibung.</short>
+                <example correction=''>Und <marker>im Voraus</marker> usw.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>im</token>
+                    <token>Wesentlichen</token>
+                </pattern>
+                <message>Die Wortgruppe "<match no="1"/> <match no="2"/>" ist schwer verständlich. Wenn möglich, nutzen Sie eine Umschreibung.</message>
+                <short>Nutzen Sie eine Umschreibung.</short>
+                <example correction=''>Und <marker>im Wesentlichen</marker> usw.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>immer</token>
+                    <token>noch</token>
+                </pattern>
+                <message>Die Wortgruppe "<match no="1"/> <match no="2"/>" ist schwer verständlich. Wenn möglich, nutzen Sie eine Umschreibung.</message>
+                <short>Nutzen Sie eine Umschreibung.</short>
+                <example correction=''>Und Sie müssen <marker>immer noch</marker> usw.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>in</token>
+                    <token>puncto</token>
+                </pattern>
+                <message>Die Wortgruppe "<match no="1"/> <match no="2"/>" ist schwer verständlich. Wenn möglich, nutzen Sie eine Umschreibung.</message>
+                <short>Nutzen Sie eine Umschreibung.</short>
+                <example correction=''>Und <marker>in puncto</marker> usw.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>noch</token>
+                    <token>mal</token>
+                </pattern>
+                <message>Die Wortgruppe "<match no="1"/> <match no="2"/>" ist schwer verständlich. Wenn möglich, nutzen Sie eine Umschreibung.</message>
+                <short>Nutzen Sie eine Umschreibung.</short>
+                <example correction=''>Um <marker>noch mal</marker> usw.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>ohne</token>
+                    <token>Weiteres</token>
+                </pattern>
+                <message>Die Wortgruppe "<match no="1"/> <match no="2"/>" ist schwer verständlich. Wenn möglich, nutzen Sie eine Umschreibung.</message>
+                <short>Nutzen Sie eine Umschreibung.</short>
+                <example correction=''>Und <marker>ohne Weiteres</marker> usw.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>recht</token>
+                    <token>haben</token>
+                </pattern>
+                <message>Die Wortgruppe "<match no="1"/> <match no="2"/>" ist schwer verständlich. Wenn möglich, nutzen Sie eine Umschreibung.</message>
+                <short>Nutzen Sie eine Umschreibung.</short>
+                <example correction=''> Wir müssen zugegeben, dass Sie <marker>recht haben</marker>.</example>
+                <example>Was Sie sagen ist richtig.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>seit</token>
+                    <token>Kurzem</token>
+                </pattern>
+                <message>Die Wortgruppe "<match no="1"/> <match no="2"/>" ist schwer verständlich. Wenn möglich, nutzen Sie eine Umschreibung.</message>
+                <short>Nutzen Sie eine Umschreibung.</short>
+                <example correction=''>Und so ist <marker>seit Kurzem</marker> usw.</example>
+                <example>Und so ist seit 5 Minuten usw.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>unter</token>
+                    <token>anderem</token>
+                </pattern>
+                <message>Die Wortgruppe "<match no="1"/> <match no="2"/>" ist schwer verständlich. Wenn möglich, nutzen Sie eine Umschreibung.</message>
+                <short>Nutzen Sie eine Umschreibung.</short>
+                <example correction=''>Sie können <marker>unter anderem</marker> usw.</example>
+                <example>Sie können Option 1, Option 2 usw.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>vor</token>
+                    <token>Ort</token>
+                </pattern>
+                <message>Die Wortgruppe "<match no="1"/> <match no="2"/>" ist schwer verständlich. Wenn möglich, nutzen Sie eine Umschreibung.</message>
+                <short>Nutzen Sie eine Umschreibung.</short>
+                <example correction=''>Die Polizei war <marker>vor Ort</marker>.</example>
+                <example>Die Polizei war bei der Adresse.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>vor</token>
+                    <token>Kurzem</token>
+                </pattern>
+                <message>Die Wortgruppe "<match no="1"/> <match no="2"/>" ist schwer verständlich. Wenn möglich, nutzen Sie eine Umschreibung.</message>
+                <short>Nutzen Sie eine Umschreibung.</short>
+                <example correction=''>Es passierte <marker>vor Kurzem</marker>.</example>
+                <example>Es passierte vor fünf Minuten.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>vor</token>
+                    <token>allem</token>
+                </pattern>
+                <message>Die Wortgruppe "<match no="1"/> <match no="2"/>" ist schwer verständlich. Wenn möglich, nutzen Sie eine Umschreibung.</message>
+                <short>Nutzen Sie eine Umschreibung.</short>
+                <example correction=''>Und <marker>vor allem</marker> usw.</example>
+                <example>Und als Erstes usw.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>liegt</token>
+                    <token>zugrunde</token>
+                </pattern>
+                <message>Die Wortgruppe "<match no="1"/> <match no="2"/>" ist schwer verständlich. Wenn möglich, nutzen Sie eine Umschreibung.</message>
+                <short>Nutzen Sie eine Umschreibung.</short>
+                <example correction=''>Dem <marker>liegt zugrunde</marker> usw.</example>
+                <example>Der Grund ist usw.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Hals</token>
+                    <token>über</token>
+                    <token>Kopf</token>
+                </pattern>
+                <message>Die Wortgruppe "<match no="1"/> <match no="2"/> <match no="3"/>" ist schwer verständlich. Wenn möglich, nutzen Sie eine Umschreibung.</message>
+                <short>Nutzen Sie eine Umschreibung.</short>
+                <example correction=''>Manchmal geschieht etwas <marker>Hals über Kopf</marker>.</example>
+                <example>Manchmal geschieht etwas plötzlich.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>nach</token>
+                    <token>wie</token>
+                    <token>vor</token>
+                </pattern>
+                <message>Die Wortgruppe "<match no="1"/> <match no="2"/> <match no="3"/>" ist schwer verständlich. Wenn möglich, nutzen Sie eine Umschreibung.</message>
+                <short>Nutzen Sie eine Umschreibung.</short>
+                <example correction=''>Und <marker>nach wie vor</marker> usw.</example>
+            </rule>
             <rule>
                 <pattern>
                     <token>zum</token>
@@ -559,9 +669,20 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                     <token>zum</token>
                     <token>anderen</token>
                 </pattern>
-                <message>Die Wendung "<match no="1"/> <match no="2"/> <match no="3"/> <match no="4"/>" ist schwer verständlich. Nutzen Sie eine Umschreibung.</message>
-                <short>Unverständliche Wendung vermeiden.</short>
+                <message>Die Wortgruppe "<match no="1"/> <match no="2"/> <match no="3"/> <match no="4"/>" ist schwer verständlich. Wenn möglich, nutzen Sie eine Umschreibung.</message>
+                <short>Nutzen Sie eine Umschreibung.</short>
                 <example correction=''>Und <marker>zum einen und zum anderen</marker> usw.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>von</token>
+                    <token>klein</token>
+                    <token>auf</token>
+                </pattern>
+                <message>Die Wortgruppe "<match no="1"/> <match no="2"/> <match no="3"/>" ist schwer verständlich. Wenn möglich, nutzen Sie eine Umschreibung.</message>
+                <short>Nutzen Sie eine Umschreibung.</short>
+                <example correction=''>Die Dokumente beschreiben das Leben <marker>von klein auf</marker>.</example>
+                <example>Die Dokumente beschreiben das Leben von Geburt an.</example>
             </rule>
         </rulegroup>
 

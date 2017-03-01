@@ -1,0 +1,4008 @@
+        <rulegroup id="ABKUERZUNG" name="Leichte Sprache: Abkürzung">
+            <rule>
+                <pattern>
+                    <token>a</token>
+                    <token>.</token>
+                    <token>B</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Solch eine Abkürzung <marker>a.B.</marker> sollten Sie vermeiden.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>a</token>
+                    <token>.</token>
+                    <token>c</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>a</token>
+                    <token>.</token>
+                    <token>D</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>a</token>
+                    <token>.</token>
+                    <token>d</token>
+                    <token>.</token>
+                    <token>D</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>a</token>
+                    <token>.</token>
+                    <token>E</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>a</token>
+                    <token>.</token>
+                    <token>F</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>a</token>
+                    <token>.</token>
+                    <token>M</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>B</token>
+                    <token>.</token>
+                    <token>A</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>B</token>
+                    <token>.</token>
+                    <token>Ed</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>B</token>
+                    <token>.</token>
+                    <token>Eng</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>B</token>
+                    <token>.</token>
+                    <token>phil</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>B</token>
+                    <token>.</token>
+                    <token>Sc</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>B</token>
+                    <token>.</token>
+                    <token>Stat</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>C</token>
+                    <token>.</token>
+                    <token>C</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>c</token>
+                    <token>.</token>
+                    <token>i</token>
+                    <token>.</token>
+                    <token>c</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>c</token>
+                    <token>.</token>
+                    <token>t</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>d</token>
+                    <token>.</token>
+                    <token>h</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>d</token>
+                    <token>.</token>
+                    <token>i</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>agr</token>
+                    <token>.</token>
+                    <token>biol</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>agr</token>
+                    <token>.</token>
+                    <token>oec</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Angl</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Anim</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Arch</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Berufspäd</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Betriebsw</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Bibl</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Biochem</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Bioinf</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Bioing</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Biol</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Biomath</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Biotechnol</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Chem</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Chem</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Ing</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Chem</token>
+                    <token>.</token>
+                    <token>oec</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Comp</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Math</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Demogr</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Des</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Dok</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Dolm</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Dram</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Fachübersetzer</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Filmkomp</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Film</token>
+                    <token>-</token>
+                    <token>u</token>
+                    <token>.</token>
+                    <token>Fernsehdram</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Film</token>
+                    <token>-</token>
+                    <token>u</token>
+                    <token>.</token>
+                    <token>Fernsehwirt</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Finw</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Forsting</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Forstw</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Freizeitwiss</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>Gartenbau</token>
+                    <token>-</token>
+                    <token>Ing</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Geogr</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Geoinf</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Geol</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Geoökol</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Geophys</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Germ</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Geront</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Ges</token>
+                    <token>.</token>
+                    <token>oec</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Ghl</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Gwl</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Gyml</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Hdl</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Heilpäd</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Hist</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Hydrol</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Immobilienw</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Inf</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Inf</token>
+                    <token>.</token>
+                    <token>oder</token>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Inform</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Inform</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Inform</token>
+                    <token>.</token>
+                    <token>Med</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Infw</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Inf</token>
+                    <token>.</token>
+                    <token>Wirt</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Inf</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Wirt</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Ing</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Journ</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>jur</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Jur</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Kam</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Kff</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Kffr</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Kfm</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Komm</token>
+                    <token>.</token>
+                    <token>Psych</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Komm</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Wirt</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Krim</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Kult</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Kult</token>
+                    <token>.</token>
+                    <token>arb</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Kult</token>
+                    <token>.</token>
+                    <token>Man</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Kult</token>
+                    <token>.</token>
+                    <token>Päd</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Künstler</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Kunst</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Päd</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Kunsttherap</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Landsch</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>ökol</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Lebensmittelchem</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Ling</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>LMChem</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>LM</token>
+                    <token>-</token>
+                    <token>Ing</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Logist</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Math</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Math</token>
+                    <token>.</token>
+                    <token>techn</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Med</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Mediator</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Medieninf</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Medieninform</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Medienök</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Medienprakt</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Medienw</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Medienwiss</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Med</token>
+                    <token>.</token>
+                    <token>Päd</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Met</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Mikrobiol</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Mil</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Min</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Mol</token>
+                    <token>.</token>
+                    <token>Med</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Mot</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>Mus</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Museol</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Musikl</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Musiktherap</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Mus</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Päd</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>NanoSc</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Nat</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Naut</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Neurowiss</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Oec</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>oec</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>troph</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>oec</token>
+                    <token>.</token>
+                    <token>troph</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>oec</token>
+                    <token>.</token>
+                    <token>troph</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>oen</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Ök</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Online</token>
+                    <token>-</token>
+                    <token>Journalist</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Orient</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Oz</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Päd</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Pfl</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Pflegepäd</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Pflegew</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Pharm</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Phil</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Phys</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Phys</token>
+                    <token>.</token>
+                    <token>Ing</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Phys</token>
+                    <token>.</token>
+                    <token>oec</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Pol</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Prähist</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Psych</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Red</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Reg</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Wiss</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Reha</token>
+                    <token>-</token>
+                    <token>psych</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Reh</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Päd</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Rel</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>päd</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>rer</token>
+                    <token>.</token>
+                    <token>com</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>rer</token>
+                    <token>.</token>
+                    <token>oec</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>rer</token>
+                    <token>.</token>
+                    <token>pol</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Rest</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Rom</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Rpfl</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Schau</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Schnittm</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Sicherheits</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Ing</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Soz</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Soz</token>
+                    <token>.</token>
+                    <token>Arb</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Sozialpäd</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Sozialwiss</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Soz</token>
+                    <token>.</token>
+                    <token>jur</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Soz</token>
+                    <token>.</token>
+                    <token>Ök</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Soz</token>
+                    <token>.</token>
+                    <token>Päd</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Soz</token>
+                    <token>.</token>
+                    <token>tech</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Sozw</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Soz</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>wirt</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>SpOec</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Sporting</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Sportl</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Sportwiss</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Sprechwiss</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Staatswiss</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Stat</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Stom</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Stomat</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Systemwiss</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Szeneb</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Szenem</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Tech</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Techn</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Technoinform</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Theol</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Tonm</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Troph</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Übers</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Umweltwiss</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Verk</token>
+                    <token>.</token>
+                    <token>wirtsch</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Verw</token>
+                    <token>.</token>
+                    <token>Wiss</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Vet</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Med</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Volksw</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Wi</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Inform</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Wi</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Ing</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Wi</token>
+                    <token>.</token>
+                    <token>Jur</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Wi</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Math</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Wipäd</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Wirt</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Wirtchem</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Wirt</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Inf</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Wirt</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Ing</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Wirtl</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Wirtschaftspsych</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Wirtsch</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Inf</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Wirtsch</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Ing</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Wirt</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Übers</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Wiss</token>
+                    <token>.</token>
+                    <token>org</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dipl</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>WiWi</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>d</token>
+                    <token>.</token>
+                    <token>J</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>d</token>
+                    <token>.</token>
+                    <token>M</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dr</token>
+                    <token>.</token>
+                    <token>e</token>
+                    <token>.</token>
+                    <token>h</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dr</token>
+                    <token>.</token>
+                    <token>E</token>
+                    <token>.</token>
+                    <token>h</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dr</token>
+                    <token>.</token>
+                    <token>h</token>
+                    <token>.</token>
+                    <token>c</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dr</token>
+                    <token>.</token>
+                    <token>h</token>
+                    <token>.</token>
+                    <token>c</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dr</token>
+                    <token>.</token>
+                    <token>-</token>
+                    <token>Ing</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dr</token>
+                    <token>.</token>
+                    <token>PH</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dr</token>
+                    <token>.</token>
+                    <token>rer</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Dr</token>
+                    <token>.</token>
+                    <token>sc</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>e</token>
+                    <token>.</token>
+                    <token>G</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>E</token>
+                    <token>.</token>
+                    <token>h</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>et</token>
+                    <token>al</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>etc</token>
+                    <token>.</token>
+                    <token>pp</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>e</token>
+                    <token>.</token>
+                    <token>V</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>i</token>
+                    <token>.</token>
+                    <token>A</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>i</token>
+                    <token>.</token>
+                    <token>b</token>
+                    <token>.</token>
+                    <token>A</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>i</token>
+                    <token>.</token>
+                    <token>d</token>
+                    <token>.</token>
+                    <token>F</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>i</token>
+                    <token>.</token>
+                    <token>d</token>
+                    <token>.</token>
+                    <token>R</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>i</token>
+                    <token>.</token>
+                    <token>e</token>
+                    <token>.</token>
+                    <token>S</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>i</token>
+                    <token>.</token>
+                    <token>H</token>
+                    <token>.</token>
+                    <token>v</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>i</token>
+                    <token>.</token>
+                    <token>J</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>i</token>
+                    <token>.</token>
+                    <token>L</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Inform</token>
+                    <token>.</token>
+                    <token>Wirt</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>i</token>
+                    <token>.</token>
+                    <token>R</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>i</token>
+                    <token>.</token>
+                    <token>S</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>i</token>
+                    <token>.</token>
+                    <token>S</token>
+                    <token>.</token>
+                    <token>v</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>i</token>
+                    <token>.</token>
+                    <token>V</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>i</token>
+                    <token>.</token>
+                    <token>V</token>
+                    <token>.</token>
+                    <token>m</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>i</token>
+                    <token>.</token>
+                    <token>w</token>
+                    <token>.</token>
+                    <token>S</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>j</token>
+                    <token>.</token>
+                    <token>J</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>j</token>
+                    <token>.</token>
+                    <token>M</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>LL</token>
+                    <token>.</token>
+                    <token>B</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>LL</token>
+                    <token>.</token>
+                    <token>M</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>M</token>
+                    <token>.</token>
+                    <token>A</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>m</token>
+                    <token>.</token>
+                    <token>a</token>
+                    <token>.</token>
+                    <token>W</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>m</token>
+                    <token>.</token>
+                    <token>d</token>
+                    <token>.</token>
+                    <token>B</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>m</token>
+                    <token>.</token>
+                    <token>E</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>M</token>
+                    <token>.</token>
+                    <token>Ed</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>M</token>
+                    <token>.</token>
+                    <token>Eng</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>M</token>
+                    <token>.</token>
+                    <token>F</token>
+                    <token>.</token>
+                    <token>A</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>M</token>
+                    <token>.</token>
+                    <token>Mus</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>M</token>
+                    <token>.</token>
+                    <token>Sc</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>m</token>
+                    <token>.</token>
+                    <token>W</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>m</token>
+                    <token>.</token>
+                    <token>w</token>
+                    <token>.</token>
+                    <token>N</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>n</token>
+                    <token>.</token>
+                    <token>bek</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+            </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+        </rule>
+        <rule>
+            <pattern>
+                <token>n</token>
+                <token>.</token>
+                <token>Ch</token>
+                <token>.</token>
+            </pattern>
+            <message>
+                Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+            </message>
+            <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>n</token>
+                    <token>.</token>
+                    <token>F</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>n</token>
+                    <token>.</token>
+                    <token>J</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>o</token>
+                    <token>.</token>
+                    <token>a</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>o</token>
+                    <token>.</token>
+                    <token>ä</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>o</token>
+                    <token>.</token>
+                    <token>B</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>o</token>
+                    <token>.</token>
+                    <token>D</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>p</token>
+                    <token>.</token>
+                    <token>a</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>Ph</token>
+                    <token>.</token>
+                    <token>D</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>s</token>
+                    <token>.</token>
+                    <token>o</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>s</token>
+                    <token>.</token>
+                    <token>t</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>s</token>
+                    <token>.</token>
+                    <token>u</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>s</token>
+                    <token>.</token>
+                    <token>Z</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>s</token>
+                    <token>.</token>
+                    <token>Zt</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>u</token>
+                    <token>.</token>
+                    <token>a</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>u</token>
+                    <token>.</token>
+                    <token>dgl</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>u</token>
+                    <token>.</token>
+                    <token>E</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>usw</token>
+                    <token>.</token>
+                    <token>usf</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>u</token>
+                    <token>.</token>
+                    <token>U</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>u</token>
+                    <token>.</token>
+                    <token>v</token>
+                    <token>.</token>
+                    <token>a</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>u</token>
+                    <token>.</token>
+                    <token>W</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>v</token>
+                    <token>.</token>
+                    <token>a</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>v</token>
+                    <token>.</token>
+                    <token>Ch</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>v</token>
+                    <token>.</token>
+                    <token>g</token>
+                    <token>.</token>
+                    <token>u</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>v</token>
+                    <token>.</token>
+                    <token>H</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>V</token>
+                    <token>.</token>
+                    <token>i</token>
+                    <token>.</token>
+                    <token>R</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>V</token>
+                    <token>.</token>
+                    <token>i</token>
+                    <token>.</token>
+                    <token>S</token>
+                    <token>.</token>
+                    <token>d</token>
+                    <token>.</token>
+                    <token>P</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>v</token>
+                    <token>.</token>
+                    <token>J</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>v</token>
+                    <token>.</token>
+                    <token>l</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>v</token>
+                    <token>.</token>
+                    <token>r</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>v</token>
+                    <token>.</token>
+                    <token>T</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>w</token>
+                    <token>.</token>
+                    <token>o</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>w</token>
+                    <token>.</token>
+                    <token>u</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>z</token>
+                    <token>.</token>
+                    <token>A</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>z</token>
+                    <token>.</token>
+                    <token>B</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>z</token>
+                    <token>.</token>
+                    <token>b</token>
+                    <token>.</token>
+                    <token>V</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>z</token>
+                    <token>.</token>
+                    <token>d</token>
+                    <token>.</token>
+                    <token>A</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>z</token>
+                    <token>.</token>
+                    <token>G</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>z</token>
+                    <token>.</token>
+                    <token>Hd</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>z</token>
+                    <token>.</token>
+                    <token>H</token>
+                    <token>.</token>
+                    <token>v</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>z</token>
+                    <token>.</token>
+                    <token>K</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>z</token>
+                    <token>.</token>
+                    <token>L</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>z</token>
+                    <token>.</token>
+                    <token>T</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>z</token>
+                    <token>.</token>
+                    <token>U</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>z</token>
+                    <token>.</token>
+                    <token>W</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>z</token>
+                    <token>.</token>
+                    <token>w</token>
+                    <token>.</token>
+                    <token>V</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>z</token>
+                    <token>.</token>
+                    <token>Z</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>z</token>
+                    <token>.</token>
+                    <token>Zt</token>
+                    <token>.</token>
+                </pattern>
+                <message>
+                    Abkürzung gefunden. Verzichten Sie auf Abkürzungen.
+                </message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>
+            <rule>
+                <pattern>
+                    <token>a</token>
+                    <token>.</token>
+                    <token>B</token>
+                    <token>.</token>
+                </pattern>
+                <message>Abkürzung gefunden. Verzichten Sie auf Abkürzungen.</message>
+                <example correction="">Schlagen Sie in <marker>Abs.</marker> 3 nach.</example>
+            </rule>

@@ -19,10 +19,7 @@
 package org.languagetool.language;
 
 import org.languagetool.languagemodel.LanguageModel;
-import org.languagetool.rules.Rule;
-import org.languagetool.rules.SimpleGermanCompoundSplitRule;
-import org.languagetool.rules.SimpleGermanDifficultExpressionsRule;
-import org.languagetool.rules.SimpleGermanMetaphorsRule;
+import org.languagetool.rules.*;
 
 import java.io.File;
 import java.io.IOException;
@@ -58,6 +55,7 @@ public class SimpleGerman extends GermanyGerman {
   public List<Rule> getRelevantRules(ResourceBundle messages) {
     return Arrays.asList(
             new SimpleGermanCompoundSplitRule(),
+            new SimpleGermanSentenceLengthRule(),
             new SimpleGermanDifficultExpressionsRule(),
             new SimpleGermanMetaphorsRule()
     );
