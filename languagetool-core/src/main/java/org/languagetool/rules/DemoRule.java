@@ -61,7 +61,9 @@ public class DemoRule extends Rule {
     for (AnalyzedTokenReadings token : tokens) {
       
       System.out.println("Token: " + token.getToken());  // the original word from the input text
-      
+      System.out.println("Token: " + token.getStartPos());  // the original word from the input text
+      System.out.println("Token: " + token.getEndPos());  // the original word from the input text
+
       // A word can have more than one reading, e.g. 'dance' can be a verb or a noun,
       // so we iterate over the readings:
       for (AnalyzedToken analyzedToken : token.getReadings()) {
