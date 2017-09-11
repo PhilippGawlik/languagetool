@@ -37,15 +37,12 @@ public class SimpleGermanSentenceLengthRule extends Rule {
         // be a special token that indicates the start of a sentence:
         Integer buffer = -1;  // start with -1 to ignore initial token
         for (AnalyzedTokenReadings token : tokens) {
-            System.out.println("Token: " + token.getToken());  // the original word from the input text
-
             if (ArrayUtils.contains(blacklist, token.getToken())) {
                 continue;
             }
             else {
                 buffer += 1;
             }
-            System.out.println("Buffer: " + buffer);  // the original word from the input text
             // You can add your own logic here to find errors. Here, we just consider
             // the word "demo" an error and create a rule match that LanguageTool will
             // then show to the user:
