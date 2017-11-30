@@ -14,7 +14,7 @@ Affentheater	unsinniges, lästiges oder übertriebenes Tun
 Affenzeck	als unsinnig, lästig oder übertrieben empfundenes Tun
 Affenzirkus	als unsinnig, lästig oder übertrieben empfundenes Tun
 Alabasterhaut	sehr helle, reine Haut
-Alter Schwede	Ausdruck des Erstaunens
+alter Schwede	Ausdruck des Erstaunens
 Ammenmärchen	erfunden / unglaubhaft / unglaubwürdig / unwahr sein
 Ampelkoalition	Koalition der Parteien SPD, FDP und Bündnis 90/Die Grünen
 Amtsschimmel	übertrieben genau Handhabung der Dienstvorschriften
@@ -92,7 +92,7 @@ Da wird doch der Hund in der Pfanne verrückt
 Dackelblick
 Dampfplauderer
 Das erste Opfer des Krieges ist die Wahrheit
-Das geht auf keine Kuhhaut
+sas geht auf keine Kuhhaut
 Das kommt mir nicht in die Tüte!
 Das kommt von keinen guten Eiern
 Das pfeifen die Spatzen von den Dächern
