@@ -25,7 +25,7 @@ public class SimpleGermanMetaphorsRule extends Rule {
         Trie trie = new Trie().onlyWholeWords();
         Map keyword2replacement = new HashMap();
 
-        String filename = "org/languagetool/word_list/metaphor_and_expressions.txt";
+        String filename = "org/languagetool/word_list/metaphor_and_expressions_without_flection.txt";
         ClassLoader classLoader = getClass().getClassLoader();
 	    File file = new File(classLoader.getResource(filename).getFile());
         try (Scanner scanner = new Scanner(file)) {
